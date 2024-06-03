@@ -16,14 +16,15 @@
   components:
   - type: Tag
     tags:
-      - CMMagazinePistolM4A3
+    - CMMagazinePistol
+    - CMMagazinePistolM4A3
   - type: BallisticAmmoProvider
     mayTransfer: True
     whitelist:
       tags:
-        - CMCartridgePistol9mm
+      - CMCartridgePistol9mm
     proto: CMCartridgePistol9mm
-    capacity: 9
+    capacity: 12
   - type: Sprite
     sprite: _CM14/Objects/Weapons/Guns/Ammunition/Magazines/m4a3.rsi
     layers:
@@ -36,9 +37,10 @@
   parent: CMBaseMagazinePistol
   id: CMMagazinePistol88m4AP
   name: 88M4 AP magazine (9mm)
-  components: # TODO CM14 armor piercing damage
+  components:
   - type: Tag
     tags:
+    - CMMagazinePistol
     - CMMagazinePistol88m4AP
   - type: BallisticAmmoProvider
     mayTransfer: True
@@ -56,3 +58,39 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: base_ap
+
+- type: entity
+  parent: CMBaseMagazinePistol
+  id: CMMagazinePistolVP78
+  name: VP78 magazine (9mm)
+  components:
+  - type: Tag
+    tags:
+    - CMMagazinePistol
+    - CMMagazinePistolVP78
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - CMCartridgePistol9mm
+    proto: CMCartridgePistol9mm
+    capacity: 18
+  - type: Sprite
+    sprite: _CM14/Objects/Weapons/Guns/Ammunition/Magazines/vp78.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: Tag
+  id: CMMagazinePistol
+
+- type: Tag
+  id: CMMagazinePistolM4A3
+
+- type: Tag
+  id: CMMagazinePistol88m4AP
+
+- type: Tag
+  id: CMMagazinePistolVP78
