@@ -43,28 +43,16 @@
     proto: CMBulletPistolM77AP
 
 - type: entity
-  id: RMCCartridgeRevolver44
+  id: CMCartridgeRevolver44
   name: cartridge (.44)
   parent: CMCartridgePistolBase
   components:
   - type: Tag
     tags:
     - Cartridge
-    - RMCCartridgeRevolver44
+    - CMCartridgeRevolver44
   - type: CartridgeAmmo
     proto: CMBulletRevolver44
-
-- type: entity
-  id: RMCCartridgeRevolver44Marksman
-  name: cartridge (.44)
-  parent: CMCartridgePistolBase
-  components:
-  - type: Tag
-    tags:
-    - Cartridge
-    - RMCCartridgeRevolver44
-  - type: CartridgeAmmo
-    proto: RMCBulletRevolver44Marksman
 
 - type: entity
   id: RMCCartridgePistol45ACP
@@ -77,5 +65,3 @@
     - RMCCartridgePistol45ACP
   - type: CartridgeAmmo
     proto: RMCBulletPistol45ACP
-
-

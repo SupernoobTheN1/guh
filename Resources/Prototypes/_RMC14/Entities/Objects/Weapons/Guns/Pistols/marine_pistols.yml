@@ -1,0 +1,286 @@
+- type: entity
+  parent: [BaseItem, CMBaseWeaponGun, RMCBaseAttachableHolder]
+  abstract: true
+  id: CMWeaponPistolBase
+  components:
+  - type: AmmoCounter
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Clothing
+    slots:
+    - suitStorage
+    - belt
+  - type: Wieldable
+  - type: WieldDelay
+    baseDelay: 0.2
+  - type: Gun
+    fireRate: 8
+    minAngle: 10
+    maxAngle: 20
+    angleIncrease: 5
+    angleDecay: 10
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: CMM1984Shoot
+  - type: GunWieldBonus
+    minAngle: -10
+    maxAngle: -10
+    angleIncrease: -4
+    angleDecay: 0
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - MagazinePistol
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: MagazineAmmoProvider
+    autoEject: true
+  - type: RMCNameItemOnVend
+    item: Sidearm
+  - type: GunUnskilledPenalty
+    angleIncrease: 5
+
+- type: entity
+  parent: CMWeaponPistolBase
+  id: CMWeaponPistolM1984
+  name: M1984 service pistol
+  description: An M1984 Service Pistol, once the standard issue sidearm of the Marines but has recently been replaced with the M77 combat pistol. Fires 9mm pistol rounds.
+  components:
+  - type: Gun
+    fireRate: 10
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Pistols/m1984.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/Pistols/m1984.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        #insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg #TODO RMC14 pistol sounds
+        #ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - CMMagazinePistolM1984
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentRecoilCompensator
+          - RMCAttachmentSuppressor
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS6ReflexSight
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBurstFireAssembly
+          - RMCAttachmentLaserSight
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-barrel: 0.71, 0.095
+      rmc-aslot-rail: -0.065, 0.125
+      rmc-aslot-underbarrel: 0.312, -0.25
+
+- type: entity
+  parent: CMWeaponPistolBase
+  id: CMWeaponPistolM77
+  name: M77 combat pistol # TODO RMC14 sounds
+  description: Standard issue Marine firearm. Also found in the hands of We-Ya PMC teams. Fires 9mm armor shredding rounds and is capable of 3-round burst.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Pistols/m77.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/Pistols/m77.rsi
+  - type: Gun
+    fireRate: 4
+    availableModes:
+    - SemiAuto
+    - Burst
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        #insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg #TODO RMC14 pistol sounds
+        #ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - CMMagazinePistolM77AP
+  - type: GunDamageModifier
+    multiplier: 1.2
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentRecoilCompensator
+          - RMCAttachmentSuppressor
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentMagneticHarness
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS6ReflexSight
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBurstFireAssembly
+          - RMCAttachmentFlashlightGrip
+          - RMCAttachmentLaserSight
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-barrel: 0.625, 0.125
+      rmc-aslot-rail: -0.03, 0.185
+      rmc-aslot-underbarrel: 0.31, -0.186
+
+- type: entity
+  parent: CMWeaponPistolBase
+  id: CMWeaponPistolMK80
+  name: MK80 pistol
+  description: A massive, formidable semi-automatic handgun chambered in 9mm squash-head rounds. A common sight throughout both UA and 3WE space, often held by both We-Ya PMC units and corporate executives. This weapon is also undergoing limited field testing as part of the Marines' next generation pistol program. The slide is engraved with the We-Ya logo reminding you who's really in charge.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Pistols/mk80.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/Pistols/mk80.rsi
+  - type: Gun
+    minAngle: 0
+    maxAngle: 5
+    angleIncrease: 1
+    angleDecay: 5
+    fireRate: 2
+    selectedMode: SemiAuto
+    shotsPerBurst: 3
+    availableModes:
+    - SemiAuto
+#    - Burst # TODO RMC14 higher fire rate, lower accuracy in burst
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_mk80.ogg
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: 0
+    angleIncrease: 0
+    angleDecay: 0
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - CMMagazinePistolMK80
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentRecoilCompensator
+          - RMCAttachmentSuppressor
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS6ReflexSight
+      rmc-aslot-underbarrel:
+        locked: true
+        startingAttachable: RMCAttachmentLaserLightModule
+        whitelist:
+          tags:
+          - RMCAttachmentLaserLightModule
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-barrel: 0.685, 0.125
+      rmc-aslot-rail: -0.125, 0.215
+      rmc-aslot-underbarrel: 0.284, -0.19
+
+- type: entity
+  parent: CMWeaponPistolBase
+  id: RMCWeaponPistolSU6
+  name: SU-6 smart pistol
+  description: The SU-6 Smartpistol is an IFF-based sidearm currently undergoing field testing in the UNMC. Uses modified .45 ACP IFF bullets. Capable of firing in bursts.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Pistols/su6.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/Pistols/su6.rsi
+  - type: GunIFF
+  - type: Gun
+    minAngle: 0
+    maxAngle: 5
+    angleIncrease: 1
+    angleDecay: 5
+    fireRate: 5
+    selectedMode: SemiAuto
+    shotsPerBurst: 2
+    availableModes:
+    - SemiAuto
+#    - Burst # TODO RMC14 different fire rate: 4.62
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/su6_shoot.ogg
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: 0
+    angleIncrease: 0
+    angleDecay: 0
+  - type: Tag
+    tags:
+    - Sidearm
+    - RMCSmartPistol
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        #insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg #TODO RMC14 pistol sounds
+        #ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - RMCMagazinePistolSU6

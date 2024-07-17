@@ -7,17 +7,18 @@
     magState: mag
     steps: 2
     zeroVisible: false
+    zeroOnlyOnEmpty: true
   - type: Appearance
 
 - type: entity
   parent: CMBaseMagazinePistol
-  id: CMMagazinePistolM4A3
-  name: M4A3 magazine (9mm)
+  id: CMMagazinePistolM1984
+  name: M1984 magazine (9mm)
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
-    - CMMagazinePistolM4A3
+    - CMMagazinePistolM1984
   - type: BallisticAmmoProvider
     mayTransfer: True
     whitelist:
@@ -26,7 +27,7 @@
     proto: CMCartridgePistol9mm
     capacity: 12
   - type: Sprite
-    sprite: _CM14/Objects/Weapons/Guns/Ammunition/Magazines/m4a3.rsi
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m1984.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -35,22 +36,22 @@
 
 - type: entity
   parent: CMBaseMagazinePistol
-  id: CMMagazinePistol88m4AP
-  name: 88M4 AP magazine (9mm)
+  id: CMMagazinePistolM77AP
+  name: M77 AP magazine (9mm)
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
-    - CMMagazinePistol88m4AP
+    - CMMagazinePistolM77AP
   - type: BallisticAmmoProvider
     mayTransfer: True
     whitelist:
       tags:
-      - CMCartridgePistol9mm
-    proto: CMCartridgePistol88m4AP
+      - CMCartridgePistol9mmAP
+    proto: CMCartridgePistolM77AP
     capacity: 19
   - type: Sprite
-    sprite: _CM14/Objects/Weapons/Guns/Ammunition/Magazines/88m4.rsi
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m77.rsi
     layers:
     - state: base_ap
       map: ["enum.GunVisualLayers.Base"]
@@ -61,22 +62,47 @@
 
 - type: entity
   parent: CMBaseMagazinePistol
-  id: CMMagazinePistolVP78
-  name: VP78 magazine (9mm)
+  id: CMMagazinePistolMK80
+  name: MK80 magazine (9mm Squash-Head)
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
-    - CMMagazinePistolVP78
+    - CMMagazinePistolMK80
   - type: BallisticAmmoProvider
     mayTransfer: True
     whitelist:
       tags:
       - CMCartridgePistol9mm
-    proto: CMCartridgePistol9mm
+      - RCMCartridgePistol9mmSquashHead #MK80 is specially chambered to take these rounds, regular pistols cannot.
+    proto: RCMCartridgePistol9mmSquashHead
     capacity: 18
   - type: Sprite
-    sprite: _CM14/Objects/Weapons/Guns/Ammunition/Magazines/vp78.rsi
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/mk80.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: CMBaseMagazinePistol
+  id: RMCMagazinePistolSU6
+  name: SU-6 magazine (.45 ACP)
+  components:
+  - type: Tag
+    tags:
+    - CMMagazinePistol
+    - RMCMagazinePistolSU6
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - RMCCartridgePistol45ACP
+    proto: RMCCartridgePistol45ACP
+    capacity: 15
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/su6.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -87,10 +113,13 @@
   id: CMMagazinePistol
 
 - type: Tag
-  id: CMMagazinePistolM4A3
+  id: CMMagazinePistolM1984
 
 - type: Tag
-  id: CMMagazinePistol88m4AP
+  id: CMMagazinePistolM77AP
 
 - type: Tag
-  id: CMMagazinePistolVP78
+  id: CMMagazinePistolMK80
+
+- type: Tag
+  id: RMCMagazinePistolSU6
