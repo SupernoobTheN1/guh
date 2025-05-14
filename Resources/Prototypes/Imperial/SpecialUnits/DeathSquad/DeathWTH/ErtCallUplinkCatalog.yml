@@ -1,30 +1,10 @@
 - type: listing
-  id: DSCallUplinkMacheteAlt
-  name: ert-uplink-melee-machete-name
-  description: ert-uplink-melee-machete-desc
-  productEntity: Machete
-  cost:
-    BlueSpaceCube: 10
-  categories:
-  - Melee
-
-- type: listing
-  id: DSCallUplinkCombatKnifeAlt
-  name: ert-uplink-melee-combatknife-name
-  description: ert-uplink-melee-combatknife-desc
-  productEntity: CombatKnife
-  cost:
-    BlueSpaceCube: 2
-  categories:
-  - Melee
-
-- type: listing
   id: SDCallUplinkEnergySwordAlt
   name: ert-uplink-melee-energysword-name
   description: ert-uplink-melee-energysword-desc
   productEntity: EnergySword
   cost:
-    BlueSpaceCube: 15
+    BlueSpaceCube: 5
   categories:
   - Melee
 
@@ -38,16 +18,17 @@
   categories:
   - Melee
 
-#AmmoNonCombat
 - type: listing
-  id: DSCallUplinkMagazineBoxMagnumAlt
-  name: ert-uplink-ammononcombat-magazineboxmagnum-name
-  description: ert-uplink-ammononcombat-magazineboxmagnum-desc
-  productEntity: MagazineBoxMagnum
+  id: DSCallUplinkWeaponMurasama
+  name: ert-uplink-melee-weapon-murasama-name
+  description: ert-uplink-melee-weapon-murasama-desc
+  productEntity: WeaponMurasama
   cost:
-    BlueSpaceCube: 2
+    BlueSpaceCube: 50
   categories:
-  - AmmoCombat
+  - Melee
+
+#Ammo
 
 - type: listing
   id: DSCallUplinkMagazineBoxMagnumAPAlt
@@ -55,17 +36,7 @@
   description: ert-uplink-ammononcombat-magazineboxmagnumap-desc
   productEntity: MagazineBoxMagnumAP
   cost:
-    BlueSpaceCube: 20
-  categories:
-  - AmmoCombat
-
-- type: listing
-  id: DSCallUplinkMagazineBoxDelivererAlt
-  name: ert-uplink-ammononcombat-magazinedeliverer-name
-  description: ert-uplink-ammononcombat-magazinedeliverer-desc
-  productEntity: ItemDelivererMagazine
-  cost:
-    BlueSpaceCube: 3
+    BlueSpaceCube: 5
   categories:
   - AmmoCombat
 
@@ -75,37 +46,7 @@
   description: ert-uplink-ammononcombat-magazinedelivereruap-desc
   productEntity: ItemDelivererMagazineUAP
   cost:
-    BlueSpaceCube: 6
-  categories:
-  - AmmoCombat
-
-- type: listing
-  id: DSCallUplinkMagazineBoxAWPAPAlt
-  name: ert-uplink-ammononcombat-magazineawpap-name
-  description: ert-uplink-ammononcombat-magazineawpap-desc
-  productEntity: AWP-magazine
-  cost:
-    BlueSpaceCube: 7
-  categories:
-  - AmmoCombat
-
-- type: listing
-  id: DSCallUplinkSpeedLoaderMagnumAlt
-  name: ert-uplink-ammononcombat-speedloadermagnum-name
-  description: ert-uplink-ammononcombat-speedloadermagnum-desc
-  productEntity: SpeedLoaderMagnum
-  cost:
-    BlueSpaceCube: 2
-  categories:
-  - AmmoCombat
-
-- type: listing
-  id: DSCallUplinkSpeedLoaderMagnumAPAlt
-  name: ert-uplink-ammononcombat-speedloadermagnumap-name
-  description: ert-uplink-ammononcombat-speedloadermagnumap-desc
-  productEntity: SpeedLoaderMagnumAP
-  cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 4
   categories:
   - AmmoCombat
 
@@ -115,7 +56,7 @@
   description: ert-uplink-ammo-magazineboxantimateriel-desc
   productEntity: MagazineBoxAntiMateriel
   cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 1
   categories:
   - AmmoCombat
 
@@ -125,29 +66,9 @@
   description: ert-uplink-ammo-cartridgerocket-desc
   productEntity: CartridgeRocket
   cost:
-    BlueSpaceCube: 6
+    BlueSpaceCube: 2
   categories:
   - AmmoCombat
-
-- type: listing
-  id: DSCallUplinkGrenadeFlashBangAlt
-  name: ert-uplink-explosives-grenadeflashbang-name
-  description: ert-uplink-explosives-grenadeflashbang-desc
-  productEntity: GrenadeFlashBang
-  cost:
-    BlueSpaceCube: 1
-  categories:
-  - Explosives
-
-- type: listing
-  id: DSCallUplinkExGrenadeAlt
-  name: ert-uplink-explosives-exgrenade-name
-  description: ert-uplink-explosives-exgrenade-desc
-  productEntity: ExGrenade
-  cost:
-    BlueSpaceCube: 4
-  categories:
-  - Explosives
 
 - type: listing
   id: DSCallUplinkC4Alt
@@ -155,30 +76,11 @@
   description: ert-uplink-explosives-c4-desc
   productEntity: C4
   cost:
-    BlueSpaceCube: 3
-  categories:
-  - Explosives
-
-- type: listing
-  id: DSCallUplinkClusterBangFullAlt
-  name: ert-uplink-explosives-clusterbangfull-name
-  description: ert-uplink-explosives-clusterbangfull-desc
-  productEntity: ClusterBangFull
-  cost:
-    BlueSpaceCube: 4
+    BlueSpaceCube: 2
   categories:
   - Explosives
 
 #Engineering
-- type: listing
-  id: DSCallUplinkClothingEyesGlassesMesonAlt
-  name: ert-uplink-engineering-clothingeyesglassesmeson-name
-  description: ert-uplink-engineering-clothingeyesglassesmeson-desc
-  productEntity: ClothingEyesGlassesMeson
-  cost:
-    BlueSpaceCube: 2
-  categories:
-  - Engineering
 
 - type: listing
   id: DSCallUplinkAmeJarAlt
@@ -186,27 +88,7 @@
   description: ert-uplink-engineering-amejar-desc
   productEntity: AmeJar
   cost:
-    BlueSpaceCube: 2
-  categories:
-  - Engineering
-
-- type: listing
-  id: DSCallUplinkJawsOfLifeAlt
-  name: ert-uplink-engineering-jawsoflife-name
-  description: ert-uplink-engineering-jawsoflife-desc
-  productEntity: JawsOfLife
-  cost:
-    BlueSpaceCube: 4
-  categories:
-  - Engineering
-
-- type: listing
-  id: DSCallUplinkPowerDrillAlt
-  name: ert-uplink-engineering-powerdrill-name
-  description: ert-uplink-engineering-powerdrill-desc
-  productEntity: PowerDrill
-  cost:
-    BlueSpaceCube: 4
+    BlueSpaceCube: 1
   categories:
   - Engineering
 
@@ -216,7 +98,7 @@
   description: ert-uplink-engineering-rcd-desc
   productEntity: RCD
   cost:
-    BlueSpaceCube: 6
+    BlueSpaceCube: 1
   categories:
   - Engineering
 
@@ -225,16 +107,6 @@
   name: ert-uplink-engineering-rcdammo-name
   description: ert-uplink-engineering-rcdammo-desc
   productEntity: RCDAmmo
-  cost:
-    BlueSpaceCube: 2
-  categories:
-  - Engineering
-
-- type: listing
-  id: DSCallUplinkHolofanProjectorAlt
-  name: ert-uplink-engineering-holofanprojector-name
-  description: ert-uplink-engineering-holofanprojector-desc
-  productEntity: HolofanProjector
   cost:
     BlueSpaceCube: 1
   categories:
@@ -250,36 +122,6 @@
   categories:
   - Engineering
 
-- type: listing
-  id: DSCallUplinkGasAnalyzerAlt
-  name: ert-uplink-engineering-gasanalyzer-name
-  description: ert-uplink-engineering-gasanalyzer-desc
-  productEntity: GasAnalyzer
-  cost:
-    BlueSpaceCube: 1
-  categories:
-  - Engineering
-
-- type: listing
-  id: DSCallUplinkMultitoolAlt
-  name: ert-uplink-engineering-multitool-name
-  description: ert-uplink-engineering-multitool-desc
-  productEntity: Multitool
-  cost:
-    BlueSpaceCube: 1
-  categories:
-  - Engineering
-
-- type: listing
-  id: DSCallUplinkTrayScannerAlt
-  name: ert-uplink-engineering-trayscanner-name
-  description: ert-uplink-engineering-trayscanner-desc
-  productEntity: trayScanner
-  cost:
-    BlueSpaceCube: 1
-  categories:
-  - Engineering
-
 #materials
 - type: listing
   id: DSCallUplinkSheetSteelAlt
@@ -287,7 +129,7 @@
   description: ert-uplink-engineering-sheetsteel-desc
   productEntity: SheetSteel
   cost:
-    BlueSpaceCube: 2
+    BlueSpaceCube: 1
   categories:
   - Engineering
 
@@ -297,7 +139,7 @@
   description: ert-uplink-engineering-sheetplasteel-desc
   productEntity: SheetPlasteel
   cost:
-    BlueSpaceCube: 3
+    BlueSpaceCube: 1
   categories:
   - Engineering
 
@@ -307,7 +149,7 @@
   description: ert-uplink-engineering-sheetrglass-desc
   productEntity: SheetRGlass
   cost:
-    BlueSpaceCube: 3
+    BlueSpaceCube: 1
   categories:
   - Engineering
 
@@ -317,7 +159,7 @@
   description: ert-uplink-engineering-sheetglass-desc
   productEntity: SheetGlass
   cost:
-    BlueSpaceCube: 2
+    BlueSpaceCube: 1
   categories:
   - Engineering
 
@@ -363,26 +205,6 @@
   categories:
   - Engineering
 
-- type: listing
-  id: DSCallUplinkBoxInflatableAlt
-  name: ert-uplink-engineering-boxinflatable-name
-  description: ert-uplink-engineering-boxinflatable-desc
-  productEntity: BoxInflatable
-  cost:
-    BlueSpaceCube: 3
-  categories:
-  - Engineering
-
-- type: listing
-  id: DSCallUplinkWelderExperimentalAlt
-  name: ert-uplink-engineering-welderexperimental-name
-  description: ert-uplink-engineering-welderexperimental-desc
-  productEntity: WelderExperimental
-  cost:
-    BlueSpaceCube: 4
-  categories:
-  - Engineering
-
 #Medical
 - type: listing
   id: DSCallUplinkOmnizineChemistryBottleAlt
@@ -390,17 +212,7 @@
   description: ert-uplink-medical-omnizinechemistrybottle-desc
   productEntity: OmnizineChemistryBottle
   cost:
-    BlueSpaceCube: 10
-  categories:
-  - Medical
-
-- type: listing
-  id: DSCallUplinkThriveninChemistryBottleAlt
-  name: ert-uplink-medical-thriveninchemistrybottle-name
-  description: ert-uplink-medical-thriveninchemistrybottle-desc
-  productEntity: ThriveninChemistryBottle
-  cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 2
   categories:
   - Medical
 
@@ -410,17 +222,7 @@
   description: ert-uplink-medical-hypospray-desc
   productEntity: Hypospray
   cost:
-    BlueSpaceCube: 6
-  categories:
-  - Medical
-
-- type: listing
-  id: DSCallUplinkGauzeAlt
-  name: ert-uplink-medical-gauze-name
-  description: ert-uplink-medical-gauze-desc
-  productEntity: Gauze
-  cost:
-    BlueSpaceCube: 1
+    BlueSpaceCube: 3
   categories:
   - Medical
 
@@ -450,7 +252,7 @@
   description: ert-uplink-medical-stimpack-desc
   productEntity: Stimpack
   cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 2
   categories:
   - Medical
 
@@ -462,7 +264,7 @@
   description: ert-uplink-medical-combatmedipen-desc
   productEntity: CombatMedipen
   cost:
-    BlueSpaceCube: 4
+    BlueSpaceCube: 2
   categories:
   - Medical
 
@@ -472,7 +274,7 @@
   description: ert-uplink-medical-burnmedipen-desc
   productEntity: BurnAutoInjector
   cost:
-    BlueSpaceCube: 3
+    BlueSpaceCube: 2
   categories:
   - Medical
 
@@ -482,7 +284,7 @@
   description: ert-uplink-medical-brutemedipen-desc
   productEntity: BruteAutoInjector
   cost:
-    BlueSpaceCube: 3
+    BlueSpaceCube: 2
   categories:
   - Medical
 
@@ -490,11 +292,11 @@
 
 - type: listing
   id: DSCallUplinkCompactDefibrillatorAlt
-  name: ert-uplink-medical-compactdefibrillator-name
-  description: ert-uplink-medical-compactdefibrillator-desc
-  productEntity: CompactDefibrillator
+  name: ert-uplink-medical-defibrillatorcompact-name
+  description: ert-uplink-medical-defibrillatorcompact-desc
+  productEntity: DefibrillatorCompact
   cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 2
   categories:
   - Medical
 
@@ -509,22 +311,12 @@
   - Medical
 
 - type: listing
-  id: DSCallUplinkHandheldHealthAnalyzerAlt
-  name: ert-uplink-medical-handheldhealthanalyzer-name
-  description: ert-uplink-medical-handheldhealthanalyzer-desc
-  productEntity: HandheldHealthAnalyzer
-  cost:
-    BlueSpaceCube: 1
-  categories:
-  - Medical
-
-- type: listing
   id: DSCallUplinkMaterialBiomassAlt
   name: ert-uplink-medical-materialbiomass-name
   description: ert-uplink-medical-materialbiomass-desc
   productEntity: MaterialBiomass
   cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 1
   categories:
   - Medical
 
@@ -538,24 +330,14 @@
   categories:
   - Medical
 
-- type: listing
-  id: DSCallUplinkSpaceMedipenAlt
-  name: ert-uplink-medical-spacemedipen-name
-  description: ert-uplink-medical-spacemedipen-desc
-  productEntity: SpaceMedipen
-  cost:
-    BlueSpaceCube: 2
-  categories:
-  - Medical
-
-#DSUplinkWeaponNonCombat
+#DSUplinkWeaponSecondary
 - type: listing
   id: DSCallUplinkWeaponPulsePistolAlt
   name: ert-uplink-weaponnoncombat-weaponpulsepistol-name
   description: ert-uplink-weaponnoncombat-weaponpulsepistol-desc
   productEntity: WeaponPulsePistol
   cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 3
   categories:
   - WeaponCombat
 
@@ -563,7 +345,7 @@
   id: DSCallUplinkWeaponRevolverMatebaAlt
   name: ert-uplink-weaponnoncombat-weaponrevolvermateba-name
   description: ert-uplink-weaponnoncombat-weaponrevolvermateba-desc
-  productEntity: WeaponRevolverMateba
+  productEntity: WeaponRevolverMatebaAP
   cost:
     BlueSpaceCube: 5
   categories:
@@ -577,7 +359,7 @@
   description: ert-uplink-weaponcombat-weaponpulserifle-desc
   productEntity: WeaponPulseRifle
   cost:
-    BlueSpaceCube: 20
+    BlueSpaceCube: 15
   categories:
   - WeaponCombat
 
@@ -597,7 +379,7 @@
   description: ert-uplink-weaponcombat-weapontaser-desc
   productEntity: WeaponTaser
   cost:
-    BlueSpaceCube: 10
+    BlueSpaceCube: 4
   categories:
   - WeaponCombat
 
@@ -607,7 +389,7 @@
   description: ert-uplink-weaponcombat-weaponsniperhristov-desc
   productEntity: WeaponSniperHristov
   cost:
-    BlueSpaceCube: 12
+    BlueSpaceCube: 4
   categories:
   - WeaponCombat
 
@@ -617,7 +399,7 @@
   description: ert-uplink-weaponcombat-weaponlauncherrocket-desc
   productEntity: WeaponLauncherRocket
   cost:
-    BlueSpaceCube: 15
+    BlueSpaceCube: 10
   categories:
   - WeaponCombat
 
@@ -627,17 +409,7 @@
   description: ert-uplink-weaponcombat-deliverer-desc
   productEntity: MachineGunDeliverer
   cost:
-    BlueSpaceCube: 20
-  categories:
-  - WeaponCombat
-
-- type: listing
-  id: DSCallUplinkWeaponAWPAlt
-  name: ert-uplink-weaponcombat-awp-name
-  description: ert-uplink-weaponcombat-awp-desc
-  productEntity: WeaponSniperAWP
-  cost:
-    BlueSpaceCube: 25
+    BlueSpaceCube: 40
   categories:
   - WeaponCombat
 
@@ -647,7 +419,7 @@
   description: ert-uplink-weaponcombat-pulseshotgun-desc
   productEntity: WeaponPulseShotgunDeathSquad
   cost:
-    BlueSpaceCube: 19
+    BlueSpaceCube: 35
   categories:
   - WeaponCombat
 
@@ -657,36 +429,6 @@
   name: ert-uplink-utilities-handcuffs-name
   description: ert-uplink-utilities-handcuffs-desc
   productEntity: Handcuffs
-  cost:
-    BlueSpaceCube: 2
-  categories:
-  - Utilities
-
-- type: listing
-  id: DSAmeliaPlushieEasterEgg
-  name: ert-uplink-utilities-ami-name
-  description: ert-uplink-utilities-ami-desc
-  productEntity: PlushieSOO
-  cost:
-    BlueSpaceCube: 1
-  categories:
-  - Utilities
-
-- type: listing
-  id: DSCallUplinkHandheldGPSBasicAlt
-  name: ert-uplink-utilities-handheldgpsbasic-name
-  description: ert-uplink-utilities-handheldgpsbasic-desc
-  productEntity: HandheldGPSBasic
-  cost:
-    BlueSpaceCube: 1
-  categories:
-  - Utilities
-
-- type: listing
-  id: DSCallUplinkHandheldStationMapAlt
-  name: ert-uplink-utilities-handheldstationmap-name
-  description: ert-uplink-utilities-handheldstationmap-desc
-  productEntity: HandheldStationMap
   cost:
     BlueSpaceCube: 1
   categories:
@@ -698,7 +440,7 @@
   description: ert-uplink-utilities-handheldcrewmonitor-desc
   productEntity: HandheldCrewMonitor
   cost:
-    BlueSpaceCube: 4
+    BlueSpaceCube: 1
   categories:
   - Utilities
 
@@ -718,7 +460,7 @@
   description: ert-uplink-weaponcombat-L6Saw-desc
   productEntity: WeaponLightMachineGunL6
   cost:
-    BlueSpaceCube: 15
+    BlueSpaceCube: 8
   categories:
   - WeaponCombat
 
@@ -728,7 +470,7 @@
   description: ert-uplink-ammo-MagazineLightRifleBox-desc
   productEntity: MagazineLightRifleBox
   cost:
-    BlueSpaceCube: 4
+    BlueSpaceCube: 2
   categories:
   - AmmoCombat
 
@@ -738,7 +480,7 @@
   description: ert-uplink-utilities-energyshield-desc
   productEntity: EnergyShield
   cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 3
   categories:
   - Utilities
 
@@ -748,30 +490,11 @@
   description: ert-uplink-Explosives-X4-desc
   productEntity: X4
   cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 4
   categories:
   - Explosives
 
 #New catalog - Equipment
-- type: listing
-  id: DSCallUplinkModsuitApocryphAlt
-  name: ert-uplink-equipment-apocryph-name
-  description: ert-uplink-equipment-apocryph-desc
-  productEntity: ClothingControlModsuitApocryphalSealed
-  cost:
-    BlueSpaceCube: 8
-  categories:
-  - Equipment
-
-- type: listing
-  id: DSCallUplinkClothingOuterVestWebAlt
-  name: uplink-clothing-outer-vest-web-name
-  description: uplink-clothing-outer-vest-web-desc
-  productEntity: ClothingOuterVestWeb
-  cost:
-    BlueSpaceCube: 4
-  categories:
-  - Equipment
 
 - type: listing
   id: DSCallUplinkVoiceMaskAlt
@@ -779,7 +502,7 @@
   description: uplink-voice-mask-desc
   productEntity: ClothingMaskGasVoiceChameleon
   cost:
-    BlueSpaceCube: 3
+    BlueSpaceCube: 2
   categories:
   - Equipment
 
@@ -789,7 +512,7 @@
   description: uplink-black-jetpack-desc
   productEntity: JetpackBlackFilled
   cost:
-    BlueSpaceCube: 4
+    BlueSpaceCube: 1
   categories:
   - Equipment
 
@@ -832,15 +555,5 @@
   productEntity: FreedomImplanter
   cost:
     BlueSpaceCube: 1
-  categories:
-  - Implants
-
-- type: listing
-  id: DSUplinkRadio
-  name: ert-uplink-syndradio-name
-  description: ert-uplink-syndradio-desc
-  productEntity: RadioImplanter
-  cost:
-    BlueSpaceCube: 3
   categories:
   - Implants

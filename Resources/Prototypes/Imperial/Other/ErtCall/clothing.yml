@@ -201,7 +201,7 @@
 - type: entity
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackDeadSquadSecurity
-  name: Dead squad backpack
+  name: Death squad backpack
   description: You don't have to know whose backpack it is.
   suffix: DeathSquad
   components:
@@ -219,7 +219,7 @@
   components:
     - type: StorageFill
       contents:
-        - id: BoxSurvival
+        - id: BoxSurvivalEngineering
         - id: ERTUplinkDeadSquadAlt #Добавлено для нового пресета Эскадрона Смерти.
         - id: PillAmbuzolPlus
 

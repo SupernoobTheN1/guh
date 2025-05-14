@@ -48,7 +48,7 @@
       types: # admeme..
         Slash: 32.5
         Shock: 12.5
-        Structural: 55
+        Structural: 155
   - type: Item
     sprite: _Mono/Objects/Weapons/Melee/murasama.rsi
   - type: Clothing

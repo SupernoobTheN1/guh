@@ -45,7 +45,7 @@
 - type: radioChannel
   id: SODDeathSquad
   name: chat-radio-deathsquad #эскадрон смерти
-  keycode: 'd'
+  keycode: 'l'
   frequency: 1599
   color: "#555555"
   longRange: true

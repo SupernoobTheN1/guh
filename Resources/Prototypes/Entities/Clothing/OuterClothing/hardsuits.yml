@@ -30,7 +30,7 @@
 
 #Atmospherics Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseEngineeringContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitAtmos
   name: atmos hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Has thermal shielding.
@@ -66,7 +66,7 @@
 
 #Engineering Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseEngineeringContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitEngineering
   name: engineering hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Has radiation shielding.
@@ -98,7 +98,7 @@
 
 #Spationaut Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitSpatio
   name: spationaut hardsuit
   description: A lightweight hardsuit designed for industrial EVA in zero gravity.
@@ -132,7 +132,7 @@
 
 #Salvage Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitSalvage
   name: mining hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Has reinforced plating for wildlife encounters.
@@ -163,7 +163,7 @@
 
 #Goliath Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitGoliath
   name: goliath hardsuit
   description: A lightweight hardsuit, adorned with a patchwork of thick, chitinous goliath hide.
@@ -198,7 +198,7 @@
 
 #Maxim Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitMaxim
   name: salvager maxim hardsuit
   description: Fire. Heat. These things forge great weapons, they also forge great salvagers.
@@ -231,7 +231,7 @@
 
 #Security Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseSecurityContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitSecurity
   name: security hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
@@ -262,7 +262,7 @@
 
 #Brigmedic Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseSecurityContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitBrigmedic
   name: brigmedic hardsuit
   description: Special hardsuit of the guardian angel of the brig. It is the medical version of the security hardsuit.
@@ -290,7 +290,7 @@
 
 #Warden's Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseSecurityContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitWarden
   name: warden's hardsuit
   description: A specialized riot suit geared to combat low pressure environments.
@@ -415,7 +415,7 @@
 
 #Research Director's Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseGrandTheftContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitRd
   name: experimental research hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
@@ -689,7 +689,7 @@
 
 #Wizard Hardsuit
 - type: entity
-  parent: [ ClothingOuterHardsuitBase, BaseMagicalContraband ]
+  parent: [ ClothingOuterHardsuitBase ]
   id: ClothingOuterHardsuitWizard
   name: wizard hardsuit
   description: A bizarre gem-encrusted suit that radiates magical energies.
@@ -902,46 +902,6 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertjanitor.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTJanitor
-
-#Deathsquad
-- type: entity
-  parent: [ BaseCentcommContraband, ClothingOuterHardsuitBase ]
-  id: ClothingOuterHardsuitDeathsquad
-  name: death squad hardsuit
-  description: An advanced hardsuit favored by commandos for use in special operations.
-  suffix: DeathSquad
-  components:
-  - type: Sprite
-    sprite: Clothing/OuterClothing/Hardsuits/deathsquad.rsi
-  - type: Clothing
-    sprite: Clothing/OuterClothing/Hardsuits/deathsquad.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.02
-    lowPressureMultiplier: 1000
-  - type: TemperatureProtection
-    heatingCoefficient: 0.001
-    coolingCoefficient: 0.001
-  - type: ExplosionResistance
-    damageCoefficient: 0.2
-  - type: FireProtection
-    reduction: 0.8
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.1 #best armor in the game
-        Slash: 0.1
-        Piercing: 0.1
-        Heat: 0.1
-        Radiation: 0.1
-        Caustic: 0.1
-        Cold: 0.1
-        Shock: 0.1
-  - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitDeathsquad
 
 #CBURN Hardsuit
 - type: entity

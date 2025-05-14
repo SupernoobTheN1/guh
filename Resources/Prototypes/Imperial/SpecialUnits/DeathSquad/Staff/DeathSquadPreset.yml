@@ -2,7 +2,7 @@
   parent: MobHuman
   id: DeathSquadEVAPreset
   suffix: DeathSquad, Alt, Noghostrole
-  name: Department Agent
+  name: Deathsquad Agent
   components:
     - type: Sprite
       netsync: false
@@ -20,9 +20,16 @@
       - DeathSquad
     - type: RandomMetadata
       nameSegments:
-      - DeathSquadFirst
       - DeathSquadSecond
+      - DeathSquadFirst
       - DeathSquadNumber
+    - type: Respirator
+      updateInterval: 99999 # Shouldn't run often, if ever.
+      suffocationThreshold: -100 # Should never happen.
+      damage:
+        types: {}
+      damageRecovery:
+        types: {}
 
 - type: startingGear #gear
   id: DeathSquadEVALodout

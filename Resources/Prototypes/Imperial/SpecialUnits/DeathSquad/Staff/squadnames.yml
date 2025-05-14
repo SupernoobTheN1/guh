@@ -1,16 +1,14 @@
 - type: dataset
   id: DeathSquadFirst
   values:
-  - Специалист
-  - Оперативник
-  - Агент
-  - Связист
-  - Штурмовик
+  - Specialist
+  - Operator
+  - Agent
 
 - type: dataset
   id: DeathSquadSecond
   values:
-  - Департамента
+  - Department
 
 - type: dataset
   id: DeathSquadNumber
