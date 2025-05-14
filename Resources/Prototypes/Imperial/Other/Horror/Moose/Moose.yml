@@ -1,6 +1,6 @@
 - type: entity
   name: Moose
-  suffix: PN, Хоррор
+  suffix: PN, Horror
   parent: SimpleSpaceMobBase
   id: HorrorMobMoose
   description: A monster from another dimension who was swallowed up by a shadow.

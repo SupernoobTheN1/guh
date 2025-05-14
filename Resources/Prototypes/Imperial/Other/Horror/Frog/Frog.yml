@@ -1,6 +1,6 @@
 - type: entity
   name: Frog
-  suffix: PN, Хоррор
+  suffix: PN, Horror
   parent: SimpleSpaceMobBase
   id: HorrorMobFrog
   description: A monster from another dimension who was swallowed up by a shadow.
@@ -71,5 +71,5 @@
         - Door
     - type: InteractionPopup
       successChance: 0.5
-      interactSuccessString: You pet Night Frog, smoothing out his fur. He looks at you strangely. However, he likes it.
+      interactSuccessString: You pet the Night Frog, smoothing out his fur. He looks at you strangely. However, he likes it.
       interactSuccessSpawn: EffectHearts

@@ -1,6 +1,6 @@
 - type: entity
   name: Devil
-  suffix: PN, Хоррор, Босс
+  suffix: PN, Horror, Boss
   parent: SimpleSpaceMobBase
   id: HorrorMobDevilBos
   description: A monster from another dimension that cats tear apart everything it sees.
