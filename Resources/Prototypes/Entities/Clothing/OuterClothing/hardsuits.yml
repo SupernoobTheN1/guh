@@ -935,8 +935,7 @@
         Radiation: 0.1
         Caustic: 0.1
         Cold: 0.1
-        Shock: 0.1 ## Added after adding stamina resist by Artur.
-        Stamina: 0.3 ## Stamina resistance Imperial
+        Shock: 0.1
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
