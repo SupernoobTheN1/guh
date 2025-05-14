@@ -2,14 +2,14 @@
   parent: ClothingMaskGas
   id: ClothingMaskDeathSquadAlt
   name: death squad protective mask
-  description: Definitely not stolen from some nerd and modified to fit the most elite NT squad...
+  description: A unique gas mask for the NT's most elite squad.
   suffix: DeathSquad
   components:
   - type: Sprite
-    sprite: Imperial/SpecialUnits/DeathSquad/Staff/ProtectiveMask.rsi
+    sprite: Clothing/Mask/squadron.rsi
     state: icon
   - type: Clothing
-    sprite: Imperial/SpecialUnits/DeathSquad/Staff/ProtectiveMask.rsi
+    sprite: Clothing/Mask/squadron.rsi
   - type: FlashImmunity
   - type: EyeProtection
   - type: FireProtection
