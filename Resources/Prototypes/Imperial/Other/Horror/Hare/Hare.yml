@@ -71,5 +71,5 @@
         - Door
     - type: InteractionPopup
       successChance: 0.5
-      interactSuccessString: Вы гладите Зайца ночи, разглаживая его шёрстку. Он на вас странно смотрит. Тем не менее, ему нравится.
+      interactSuccessString: You pet the Night Hare, smoothing out his fur. He looks at you strangely. Nevertheless, he likes it.
       interactSuccessSpawn: EffectHearts
