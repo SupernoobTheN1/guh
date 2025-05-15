@@ -49,12 +49,7 @@
       path: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
-  - type: Appearance
-  - type: RMCNameItemOnVend
-    item: Sidearm
-  - type: GunUnskilledPenalty
-    angleIncrease: 5
-
+      
 - type: entity
   parent: RMCWeaponRevolverBase
   id: RMCWeaponRevolverM44
