@@ -27,23 +27,3 @@
     maxItemSize: Huge
     grid:
     - 0,0,27,1
-  - type: FixedItemSizeStorage
-
-- type: entity
-  parent: RMCBaseGunCase
-  id: RMCSmartPistolCase
-  name: SU-6 smart pistol case
-  description: "A gun case containing the SU-6 smart pistol. Comes with a full belt holster."
-  components:
-  - type: Storage
-    maxItemSize: Huge
-    grid:
-    - 0,0,3,1
-    whitelist:
-      tags:
-      - RMCSmartPistol
-      - RMCSmartPistolHolster
-  - type: StorageFill
-    contents:
-    - id: RMCWeaponPistolSU6
-    - id: RMCBeltSmartPistolFilled

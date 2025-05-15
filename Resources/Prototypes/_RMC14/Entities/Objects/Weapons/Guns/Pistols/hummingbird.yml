@@ -8,15 +8,8 @@
     sprite: _RMC14/Objects/Weapons/Guns/Pistols/m43.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Pistols/m43.rsi
-  - type: RMCSelectiveFire
-    scatterWielded: 6
-    scatterUnwielded: 6
-    baseFireRate: 10
-    burstScatterMult: 3
   - type: Item
     size: Tiny
-  - type: GunDamageModifier
-    multiplier: 1.2
   - type: Tag
     tags:
     - Holdout
@@ -31,22 +24,6 @@
         whitelist:
           tags:
           - RMCMagazinePistolD18
-  - type: AttachableHolder
-    slots:
-      rmc-aslot-barrel:
-        whitelist:
-          tags:
-          - RMCAttachmentSuppressor
-      rmc-aslot-rail:
-        whitelist:
-          tags:
-          - RMCAttachmentRailFlashlight
-          - RMCAttachmentS5RedDotSight
-          - RMCAttachmentS6ReflexSight
-  - type: AttachableHolderVisuals
-    offsets:
-      rmc-aslot-barrel: 0.620, 0.05
-      rmc-aslot-rail: -0.03, 0.09
 
 - type: entity
   parent: CMBaseMagazinePistol

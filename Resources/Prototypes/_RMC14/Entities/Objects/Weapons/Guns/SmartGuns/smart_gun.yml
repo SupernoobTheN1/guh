@@ -5,14 +5,6 @@
   description: The actual firearm in the Smart Gun System. Essentially a heavy, mobile machinegun.
   components:
   - type: GunRequiresWield
-  - type: Corrodible
-    isCorrodible: false
-  - type: GunIFF
-  - type: WieldDelay
-    baseDelay: 0.4
-  - type: WieldableSpeedModifiers # TODO RMC14 I used arbitrary numbers check this later
-    baseWalk: 0.63
-    baseSprint: 0.63
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/smart_gun.rsi
     layers:
@@ -61,38 +53,3 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
         startingItem: RMCPowerCellSmartgun
-  - type: GunDamageModifier
-    multiplier: 1
-  - type: GunToggleableAmmo
-    settings:
-    - damage:
-        types:
-          Piercing: 30
-      armorPiercing: 0
-      name: rmc-toggleable-ammo-highly-precise
-      icon:
-        sprite: _RMC14/Actions/marine_smart_gun_actions.rsi
-        state: ammo_swap_normal
-    - damage:
-        types:
-          Piercing: 20
-      armorPiercing: 40
-      name: rmc-toggleable-ammo-armor-shredding
-      icon:
-        sprite: _RMC14/Actions/marine_smart_gun_actions.rsi
-        state: ammo_swap_ap
-  - type: RMCMagneticItem
-  - type: GunRequiresSkills
-    skills:
-      smartGun: 1
-  - type: GunSkilledRecoil
-    skills:
-      firearms: 100
-  - type: GunDrainBatteryOnShoot
-  - type: GunRequireEquipped
-    whitelist:
-      components:
-      - SmartGunArmor
-  - type: GunToggleableRecoil
-  - type: GunToggleableAutoFire
-  - type: SmartGun

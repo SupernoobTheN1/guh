@@ -11,19 +11,16 @@
   id: CMCartridgePistol9mmAP
 
 - type: Tag
+  id: RMCCartridgeRevolver44
+
+- type: Tag
   id: RCMCartridgePistol9mmSquashHead
 
 - type: Tag
-  id: CMCartridgeRevolver44
-
-- type: Tag
-  id: CMCartridgeRifle10x24mm
+  id: RMCCartridge7x45mm
 
 - type: Tag
   id: RMCCartridgePistol45ACP
-
-- type: Tag
-  id: CMMortarShell
 
 - type: Tag
   id: CMBloodPack
@@ -59,13 +56,85 @@
   id: LauncherCompatibleGrenade
 
 - type: Tag
-  id: CMAutoInjector
-
-- type: Tag
   id: CMFlarePack
 
 - type: Tag
   id: RMCSmartPistol
 
 - type: Tag
-  id: RMCSmartPistolHolster
+  id: RMCMK80
+
+- type: Tag
+  id: RMCRocketAmmo84mm
+
+- type: Tag
+  id: RMCDropshipWeaponPoint
+
+- type: Tag
+  id: RMCDropshipUtilityPoint
+
+- type: Tag
+  id: WeaponSMGM63
+
+- type: Tag
+  id: RMCWeaponPistolM77
+
+- type: Tag
+  id: RMCWeaponRevolverM44
+
+- type: Tag
+  id: RMCGlass
+
+- type: Tag
+  id: Scabbard
+
+- type: Tag
+  id: RMCMacheteScabbard
+
+- type: Tag
+  id: RMCScalpel
+
+- type: Tag
+  id: RMCScrewdriver
+
+- type: Tag
+  id: ThrowingKnife
+
+- type: Tag
+  id: RMCCircuitboard
+
+- type: Tag
+  id: RMCEngineerKit
+
+- type: Tag
+  id: RMCXenoLarva
+
+- type: Tag
+  id: RipOffOnInfection
+
+- type: Tag
+  id: RMCAirburstGrenade
+
+- type: Tag
+  id: CMMagazineCaselessM39
+
+- type: Tag
+  id: CMMagazineRifleM41A
+
+- type: Tag
+  id: CMMagazineRifleM41AE2
+
+- type: Tag
+  id: CMMagazineRifleM4RA
+
+- type: Tag
+  id: CMCartridgeRevolver44
+
+- type: Tag
+  id: CMCartridgeCaseless10x20mm
+
+- type: Tag
+  id: CMCartridgeRifle10x24mm
+
+- type: Tag
+  id: CMSpeedLoaderM44
