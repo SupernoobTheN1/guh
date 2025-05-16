@@ -2,7 +2,7 @@
   parent: BasePDA
   id: DeadSquadPDA
   name: death squad PDA
-  description: Oh no ...
+  description: Oh no...
   components:
   - type: Pda
     id: DeadSquadIDCard
@@ -15,11 +15,23 @@
     borderColor: "#333333"
   - type: Icon
     state: pda-bartender
+  - type: CartridgeLoader #Mono: Added cartridges
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - MedTekCartridge
+      - WantedListCartridge
+      - LogProbeCartridge
+      - AstroNavCartridge
+      - LedgerCartridge
+      - BountyContractsCartridge
 
 - type: entity
   parent: CentcomIDCard
   id: DeadSquadIDCard
-  name: ERT ID card
+  name: Deathsquad ID card
   components:
     - type: Sprite
       sprite: Imperial/Other/ErtCall/deadsquadCard.rsi
@@ -28,22 +40,11 @@
         - state: deadsquadID # we have the sprites but don't need individual ID entities for now.
     - type: PresetIdCard
       job: DeathSquad
-
-- type: entity
-  id: ThriveninChemistryBottle
-  name: thrivenin bottle
-  parent: BaseChemistryEmptyBottle
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: Thrivenin
-          Quantity: 30
-  - type: Tag
-    tags:
-    - Bottle
+    - type: Access
+      groups:
+      - AllAccess
+      tags:
+      - CentralCommand
 
 - type: entity
   id: ERTCallCrateMineShieldImplant ##Введение нового ящика, содержащего импланты

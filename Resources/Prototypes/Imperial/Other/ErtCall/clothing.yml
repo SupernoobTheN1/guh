@@ -11,6 +11,8 @@
   - type: Storage
     grid:
     - 0,0,11,4
+  - type: ExplosionResistance #Mono: More explosive resistance
+    damageCoefficient: 0.3
 
 - type: entity
   noSpawn: false
@@ -40,4 +42,6 @@
       - id: WelderExperimental
       - id: Multitool
       - id: CableApcStack
+  - type: ExplosionResistance #Mono: Explosive resistance
+    damageCoefficient: 0.3
 #DEAD SQUAD END

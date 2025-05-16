@@ -4,7 +4,7 @@
   description: ert-uplink-melee-energysword-desc
   productEntity: EnergySword
   cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 5 #Mono: Lowered the price from 15 to 5
   categories:
   - Melee
 
@@ -18,7 +18,7 @@
   categories:
   - Melee
 
-- type: listing
+- type: listing #Mono: Added Murasama
   id: DSCallUplinkWeaponMurasama
   name: ert-uplink-melee-weapon-murasama-name
   description: ert-uplink-melee-weapon-murasama-desc
@@ -36,7 +36,7 @@
   description: ert-uplink-ammononcombat-magazineboxmagnumap-desc
   productEntity: MagazineBoxMagnumAP
   cost:
-    BlueSpaceCube: 5
+    BlueSpaceCube: 5 #Mono: Lowered the price from 12 to 5
   categories:
   - AmmoCombat
 
@@ -46,7 +46,7 @@
   description: ert-uplink-ammononcombat-magazinedelivereruap-desc
   productEntity: ItemDelivererMagazineUAP
   cost:
-    BlueSpaceCube: 4
+    BlueSpaceCube: 4 #Mono: Lowered the price from 6 to 4
   categories:
   - AmmoCombat
 
@@ -56,7 +56,7 @@
   description: ert-uplink-ammo-magazineboxantimateriel-desc
   productEntity: MagazineBoxAntiMateriel
   cost:
-    BlueSpaceCube: 1
+    BlueSpaceCube: 1 #Mono: Lowered the price from 5 to 1
   categories:
   - AmmoCombat
 
@@ -66,7 +66,7 @@
   description: ert-uplink-ammo-cartridgerocket-desc
   productEntity: CartridgeRocket
   cost:
-    BlueSpaceCube: 2
+    BlueSpaceCube: 2 #Mono: Lowered the price from 6 to 2
   categories:
   - AmmoCombat
 
@@ -76,12 +76,34 @@
   description: ert-uplink-explosives-c4-desc
   productEntity: C4
   cost:
-    BlueSpaceCube: 2
+    BlueSpaceCube: 2 #Mono: Lowered the price from 3 to 2
   categories:
   - Explosives
 
 #Engineering
 
+#Mono start
+- type: listing
+  id: DSCallUplinkHandHeldMassScannerAlt
+  name: ert-uplink-handheld-mass-scanner-name
+  description: ert-uplink-handheld-mass-scanner-desc
+  productEntity: HandHeldMassScannerBorg
+  cost:
+    BlueSpaceCube: 1
+  categories:
+  - Engineering
+
+- type: listing
+  id: DSCallUplinkPowerCellAntiqueProtoAlt
+  name: ert-uplink-power-cell-antique-name
+  description: ert-uplink-power-cell-antique-desc
+  productEntity: PowerCellAntiqueProto
+  cost:
+    BlueSpaceCube: 1
+  categories:
+  - Engineering
+
+#Mono end
 - type: listing
   id: DSCallUplinkAmeJarAlt
   name: ert-uplink-engineering-amejar-name
@@ -212,7 +234,7 @@
   description: ert-uplink-medical-omnizinechemistrybottle-desc
   productEntity: OmnizineChemistryBottle
   cost:
-    BlueSpaceCube: 2
+    BlueSpaceCube: 1 #Mono: Lowered the price from 2 to 1
   categories:
   - Medical
 
@@ -256,39 +278,59 @@
   categories:
   - Medical
 
-#new medipens
-
 - type: listing
   id: DSCallUplinkCombatMedipenAlt
   name: ert-uplink-medical-combatmedipen-name
   description: ert-uplink-medical-combatmedipen-desc
   productEntity: CombatMedipen
   cost:
-    BlueSpaceCube: 2
+    BlueSpaceCube: 1 #Mono: Lowered the price from 2 to 1
+  categories:
+  - Medical
+
+#Mono start
+
+- type: listing
+  id: DSCallUplinkPolyAutoInjectorAlt
+  name: ert-uplink-medical-poly-auto-injector-name
+  description: ert-uplink-medical-poly-auto-injector-desc
+  productEntity: PolyAutoInjector
+  cost:
+    BlueSpaceCube: 1
   categories:
   - Medical
 
 - type: listing
-  id: DSCallUplinkBurnMedipenAlt
-  name: ert-uplink-medical-burnmedipen-name
-  description: ert-uplink-medical-burnmedipen-desc
-  productEntity: BurnAutoInjector
+  id: DSCallUplinkPyraAutoInjectorAlt
+  name: ert-uplink-medical-pyra-auto-injector-name
+  description: ert-uplink-medical-pyra-auto-injector-desc
+  productEntity: PyraAutoInjector
   cost:
-    BlueSpaceCube: 2
+    BlueSpaceCube: 1
   categories:
   - Medical
 
 - type: listing
-  id: DSCallUplinkBruteMedipenAlt
-  name: ert-uplink-medical-brutemedipen-name
-  description: ert-uplink-medical-brutemedipen-desc
-  productEntity: BruteAutoInjector
+  id: DSCallUplinkPunctAutoInjectorAlt
+  name: ert-uplink-medical-punct-auto-injector-name
+  description: ert-uplink-medical-punct-auto-injector-desc
+  productEntity: PunctAutoInjector
   cost:
-    BlueSpaceCube: 2
+    BlueSpaceCube: 1
   categories:
   - Medical
 
- #new medipens end
+- type: listing
+  id: DSCallUplinkRadAutoInjectorAlt
+  name: ert-uplink-medical-rad-auto-injector-name
+  description: ert-uplink-medical-rad-auto-injector-desc
+  productEntity: RadAutoInjector
+  cost:
+    BlueSpaceCube: 1
+  categories:
+  - Medical
+
+#Mono end
 
 - type: listing
   id: DSCallUplinkCompactDefibrillatorAlt
@@ -296,17 +338,7 @@
   description: ert-uplink-medical-defibrillatorcompact-desc
   productEntity: DefibrillatorCompact
   cost:
-    BlueSpaceCube: 2
-  categories:
-  - Medical
-
-- type: listing
-  id: DSCallUplinkEmergencyMedipenAlt
-  name: ert-uplink-medical-emergencymedipen-name
-  description: ert-uplink-medical-emergencymedipen-desc
-  productEntity: EmergencyMedipen
-  cost:
-    BlueSpaceCube: 1
+    BlueSpaceCube: 2 #Mono: Changed the price from 5 to 1
   categories:
   - Medical
 
@@ -316,7 +348,7 @@
   description: ert-uplink-medical-materialbiomass-desc
   productEntity: MaterialBiomass
   cost:
-    BlueSpaceCube: 1
+    BlueSpaceCube: 1 #Mono: Changed the price from 5 to 1
   categories:
   - Medical
 
@@ -337,7 +369,7 @@
   description: ert-uplink-weaponnoncombat-weaponpulsepistol-desc
   productEntity: WeaponPulsePistol
   cost:
-    BlueSpaceCube: 3
+    BlueSpaceCube: 3 #Mono: Changed the price from 5 to 1
   categories:
   - WeaponCombat
 
@@ -345,7 +377,7 @@
   id: DSCallUplinkWeaponRevolverMatebaAlt
   name: ert-uplink-weaponnoncombat-weaponrevolvermateba-name
   description: ert-uplink-weaponnoncombat-weaponrevolvermateba-desc
-  productEntity: WeaponRevolverMatebaAP
+  productEntity: WeaponRevolverMatebaAP #Mono: From normal Mateba to AP one
   cost:
     BlueSpaceCube: 5
   categories:
@@ -359,7 +391,7 @@
   description: ert-uplink-weaponcombat-weaponpulserifle-desc
   productEntity: WeaponPulseRifle
   cost:
-    BlueSpaceCube: 15
+    BlueSpaceCube: 15 #Mono: Changed the price from 20 to 15
   categories:
   - WeaponCombat
 
@@ -379,7 +411,7 @@
   description: ert-uplink-weaponcombat-weapontaser-desc
   productEntity: WeaponTaser
   cost:
-    BlueSpaceCube: 4
+    BlueSpaceCube: 4 #Mono: Changed the price from 10 to 4
   categories:
   - WeaponCombat
 
@@ -389,7 +421,7 @@
   description: ert-uplink-weaponcombat-weaponsniperhristov-desc
   productEntity: WeaponSniperHristov
   cost:
-    BlueSpaceCube: 4
+    BlueSpaceCube: 4 #Mono: Changed the price from 12 to 4
   categories:
   - WeaponCombat
 
@@ -399,7 +431,7 @@
   description: ert-uplink-weaponcombat-weaponlauncherrocket-desc
   productEntity: WeaponLauncherRocket
   cost:
-    BlueSpaceCube: 10
+    BlueSpaceCube: 10 #Mono: Changed the price from 15 to 10
   categories:
   - WeaponCombat
 
@@ -409,7 +441,7 @@
   description: ert-uplink-weaponcombat-deliverer-desc
   productEntity: MachineGunDeliverer
   cost:
-    BlueSpaceCube: 40
+    BlueSpaceCube: 40 #Mono: Changed the price from 20 to 40
   categories:
   - WeaponCombat
 
@@ -419,7 +451,7 @@
   description: ert-uplink-weaponcombat-pulseshotgun-desc
   productEntity: WeaponPulseShotgunDeathSquad
   cost:
-    BlueSpaceCube: 35
+    BlueSpaceCube: 35 #Mono: Changed the price from 19 to 35
   categories:
   - WeaponCombat
 
@@ -460,7 +492,7 @@
   description: ert-uplink-weaponcombat-L6Saw-desc
   productEntity: WeaponLightMachineGunL6
   cost:
-    BlueSpaceCube: 8
+    BlueSpaceCube: 8 #Mono: Changed the price from 15 to 8
   categories:
   - WeaponCombat
 
@@ -470,7 +502,7 @@
   description: ert-uplink-ammo-MagazineLightRifleBox-desc
   productEntity: MagazineLightRifleBox
   cost:
-    BlueSpaceCube: 2
+    BlueSpaceCube: 2 #Mono: Changed the price from 4 to 2
   categories:
   - AmmoCombat
 
@@ -480,7 +512,7 @@
   description: ert-uplink-utilities-energyshield-desc
   productEntity: EnergyShield
   cost:
-    BlueSpaceCube: 3
+    BlueSpaceCube: 3 #Mono: Changed the price from 5 to 3
   categories:
   - Utilities
 
@@ -490,7 +522,7 @@
   description: ert-uplink-Explosives-X4-desc
   productEntity: X4
   cost:
-    BlueSpaceCube: 4
+    BlueSpaceCube: 4 #Mono: Changed the price from 5 to 4
   categories:
   - Explosives
 
@@ -502,7 +534,7 @@
   description: uplink-voice-mask-desc
   productEntity: ClothingMaskGasVoiceChameleon
   cost:
-    BlueSpaceCube: 2
+    BlueSpaceCube: 2 #Mono: Changed the price from 3 to 2
   categories:
   - Equipment
 
@@ -512,7 +544,7 @@
   description: uplink-black-jetpack-desc
   productEntity: JetpackBlackFilled
   cost:
-    BlueSpaceCube: 1
+    BlueSpaceCube: 1 #Mono: Changed the price from 4 to 1
   categories:
   - Equipment
 

@@ -41,27 +41,27 @@ ert-uplink-engineering-cablemvstack-name = MV cables
 ert-uplink-engineering-cablemvstack-desc = 30 MV cables to repair any power damages
 ert-uplink-engineering-cableapcstack-name = LV cables
 ert-uplink-engineering-cableapcstack-desc = 30 LV cables to repair any power damages
+ert-uplink-handheld-mass-scanner-name = handheld mass scanner
+ert-uplink-handheld-mass-scanner-desc = A hand-held mass scanner. Now with a microreactor battery.
+ert-uplink-power-cell-antique-name = antique power cell
+ert-uplink-power-cell-antique-desc = A small cell that self recharges. Used in old laser arms research
 
 ert-uplink-medical-omnizinechemistrybottle-name = Omnizine
 ert-uplink-medical-omnizinechemistrybottle-desc = Heals almost everything.
 ert-uplink-medical-hypospray-name = Hypospray
 ert-uplink-medical-hypospray-desc = Great for injecting chemicals in a fight.
 ert-uplink-medical-medicatedsuture-name = Medical Suture
-ert-uplink-medical-medicatedsuture-desc = Heals all brute wounds, and stops bleeding.
+ert-uplink-medical-medicatedsuture-desc = A suture soaked in medicine, treats blunt-force trauma effectively and closes wounds.
 ert-uplink-medical-regenerativemesh-name = Regenerative Mesh
-ert-uplink-medical-regenerativemesh-desc = Heals all burns. 
+ert-uplink-medical-regenerativemesh-desc = Used to treat even the nastiest burns. Also effective against caustic burns.
 ert-uplink-medical-stimpack-name = Hyperzine
 ert-uplink-medical-stimpack-desc = Contains enough hyperzine for you to have the chemical's effect for 30 seconds. Use it when you're sure you're ready to throw down.
 ert-uplink-medical-defibrillatorcompact-name = Compact defibrillator
 ert-uplink-medical-defibrillatorcompact-desc = Now in fun size!
-ert-uplink-medical-emergencymedipen-name = Emergency Medipen
-ert-uplink-medical-emergencymedipen-desc = Use it to save crit people.
-ert-uplink-medical-handheldhealthanalyzer-name = Heatlh analyzer
-ert-uplink-medical-handheldhealthanalyzer-desc = Use it to see your injuries.
 ert-uplink-medical-materialbiomass-name = Biomass
 ert-uplink-medical-materialbiomass-desc = Biomass. For cloning.
-ert-uplink-medical-pillambuzolplus-desc = Ambuzol Plus
-ert-uplink-medical-pillambuzolplus-name = Stops the zombie infection, and gives you an immunity to it.
+ert-uplink-medical-pillambuzolplus-name = Ambuzol Plus
+ert-uplink-medical-pillambuzolplus-desc = Stops the zombie infection, and gives you an immunity to it.
 
 ert-uplink-weaponnoncombat-weaponpulsepistol-name = Pulse pistol
 ert-uplink-weaponnoncombat-weaponpulsepistol-desc = A state of the art energy pistol favoured as a sidearm by the NT operatives. On the handle is a label that says 'for authorized use only.'
@@ -94,3 +94,5 @@ ert-uplink-utilities-energyshield-desc = Exotic energy shield, when folded, can 
 
 ert-uplink-Explosives-X4 = X4
 ert-uplink-Explosives-X4-desc = A stronger variant of C4. Can destroy plastitanium walls.
+
+#Mono: Translated everything

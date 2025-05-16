@@ -41,14 +41,16 @@ ert-uplink-melee-weapon-murasama-desc = You're the boss.
 store-category-ert-uplink-equipment = Equipment
 store-category-ert-uplink-implants = Implants
 
-ert-uplink-medical-healthanalyzer-name = heatl analyzer
-ert-uplink-medical-healthanalyzer-desc = To understand what hurts you.
 ert-uplink-medical-combatmedipen-name = combat medipen
-ert-uplink-medical-combatmedipen-desc = For quick recovery from everything right on the battlefield.
-ert-uplink-medical-brutemedipen-name = brute medipen
-ert-uplink-medical-brutemedipen-desc = Allows you to return to action in the shortest possible time after physical injuries.
-ert-uplink-medical-burnmedipen-name = burn medipen
-ert-uplink-medical-burnmedipen-desc = Allows you to return to action in the shortest possible time after terrible burns.
+ert-uplink-medical-combatmedipen-desc = A single-use medipen containing chemicals that regenerate most types of damage.
+ert-uplink-medical-poly-auto-injector-name = polypyrylium oligomers auto-injector
+ert-uplink-medical-poly-auto-injector-desc = A rapid dose of polyp... polypyryl... polypyryliu.... It contains extract of spaceman's trumpet. Intended to address brute damage and asphyxiation.
+ert-uplink-medical-pyra-auto-injector-name = pyrazine auto-injector
+ert-uplink-medical-pyra-auto-injector-desc = A rapid dose of pyrazine and dermaline, intended for combat applications.
+ert-uplink-medical-punct-auto-injector-name = puncturase auto-injector
+ert-uplink-medical-punct-auto-injector-desc = A rapid dose of puncturase and tranexamic acid, intended for combat applications.
+ert-uplink-medical-rad-auto-injector-name = rad auto-injector
+ert-uplink-medical-rad-auto-injector-desc = A rapid dose of anti-radiation. Contains arithrazine and bicaridine.
 
 ert-uplink-macrobomb-name = marcobomb implant
 ert-uplink-macrobomb-desc = A stronger version of the microbomb with automatic activation.
@@ -73,3 +75,5 @@ ent-SODDeathSquadHeadset = Deathsquad headset
     .desc = Only for the most worthy.
 ent-DeathSquadEVAPreset = Deathsquad agent
 ent-DeathSquadEVAPresetGhostRole = Deathsquad agent
+
+#Mono: Translated everything.

@@ -21,7 +21,7 @@
   - type: DeviceLinkSink
     ports:
       - Trigger
-  - type: Explosive # Powerful explosion in a very small radius. Doesn't break underplating.
+  - type: Explosive # Powerful explosion in a very small radius. It NEEDS to break outpost plastitanium walls
     explosionType: DemolitionCharge
     totalIntensity: 10000
     intensitySlope: 2500
