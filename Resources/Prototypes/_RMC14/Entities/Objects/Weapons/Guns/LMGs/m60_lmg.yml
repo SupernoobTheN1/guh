@@ -15,7 +15,7 @@
       state: barrel
       offset: 0.525, 0.0925
     - sprite: _RMC14/Objects/Weapons/Guns/Attachments/stock.rsi
-      state: m60_stock
+      state: stock
       offset: -0.6, 0
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/LMGs/m60.rsi
@@ -35,30 +35,10 @@
     - FullAuto
     soundGunshot:
       path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_m60.ogg
+      params:
+        volume: -4
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
-  - type: RMCSelectiveFire
-    baseFireModes:
-    - SemiAuto
-    - Burst
-    - FullAuto
-    recoilWielded: 0
-    recoilUnwielded: 0
-    scatterWielded: 4
-    scatterUnwielded: 4
-    baseFireRate: 3.3
-    burstScatterMult: 3
-    modifiers:
-      Burst:
-        fireDelay: 0.1
-        maxScatterModifier: 10
-        useBurstScatterMult: true
-        unwieldedScatterMultiplier: 0
-        shotsToMaxScatter: 6
-      FullAuto:
-        fireDelay: 0.01
-        maxScatterModifier: 4
-        shotsToMaxScatter: 6
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -70,28 +50,6 @@
         whitelist:
           tags:
           - RMCMagazineLMGM60
-  - type: GunDamageModifier
-    multiplier: 1
-  # - type: UniqueAction
-  # - type: BreechLoaded
-  #   needOpenClose: false
-  # - type: Appearance
-  # - type: GenericVisualizer
-  #   visuals:
-  #     enum.BreechVisuals.Open:
-  #       enum.BreechVisuals.Open:
-  #         True: { state: cover-open }
-  #         False: { state: cover-closed }
-  - type: AttachableHolder
-    slots:
-      rmc-aslot-underbarrel:
-        startingAttachable: RMCAttachmentBipod
-        whitelist:
-          tags:
-          - RMCAttachmentBipod
-  - type: AttachableHolderVisuals
-    offsets:
-      rmc-aslot-underbarrel: 0.618, -0.263
   - type: Wieldable
   - type: GunRequiresWield
 
@@ -135,27 +93,20 @@
     proto: RMCBulletLMGM60
 
 - type: entity
-  parent: BaseBullet
+  parent: RMCBaseBullet
   id: RMCBulletLMGM60
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Piercing: 45
-  - type: RMCProjectileDamageFalloff
-    thresholds:
-    - range: 22
-      falloff: 9999
-      ignoreModifiers: true
-  - type: CMArmorPiercing
-    amount: 30
+        Piercing: 22
 
 - type: Tag
   id: RMCWeaponLMGM60
 
 - type: Tag
   id: RMCMagazineLMGM60
-  
+
 - type: Tag
   id: RMCCartridgeLMGM60

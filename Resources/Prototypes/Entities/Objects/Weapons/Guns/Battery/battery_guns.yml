@@ -645,8 +645,6 @@
   id: WeaponAdvancedLaser
   description: An experimental civilian grade high-energy laser pistol with a self-charging nuclear battery.
   components:
-  - type: Item
-    size: Normal  # Intentionally larger than other pistols
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
     layers:

@@ -1,15 +1,13 @@
-- type: entity
+﻿- type: entity
   abstract: true
   parent: [ CMBaseWeaponGun, BaseItem ]
-  id: RMCBaseWeaponLMG
+  id: CMBaseWeaponRifle
   components:
   - type: Gun
-    shotsPerBurst: 5
-    selectedMode: FullAuto
-    soundEmpty:
-      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+    fireRate: 4
+    shotsPerBurst: 3
+    selectedMode: Burst
     availableModes:
-    - Fullauto
     - SemiAuto
     - Burst
   - type: Wieldable
@@ -27,17 +25,22 @@
   - type: StaticPrice
     price: 500
   - type: MagazineAmmoProvider
-    autoEject: false
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
+    autoEject: true
   - type: Appearance
   - type: GunRequiresWield
 
 - type: entity
+  abstract: true
+  id: RMCBaseWeaponMagazineVisuals
+  components:
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+
+- type: entity
   parent: BaseMagazineRifle
-  id: RMCMagazineLMGBase
+  id: CMMagazineRifleBase
   abstract: true
   components:
   - type: Item
@@ -54,7 +57,7 @@
 
 - type: entity
   parent: BaseCartridgeRifle
-  id: RMCBaseCartridgeLMG
+  id: CMBaseCartridgeRifle
   name: cartridge
   abstract: true
   components:
@@ -62,4 +65,4 @@
     deleteOnSpawn: true
 
 - type: Tag
-  id: RMCMagazineLMG
+  id: CMMagazineRifle

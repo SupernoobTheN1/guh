@@ -134,7 +134,4 @@
   id: CMCartridgeCaseless10x20mm
 
 - type: Tag
-  id: CMCartridgeRifle10x24mm
-
-- type: Tag
   id: CMSpeedLoaderM44
