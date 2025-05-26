@@ -1,0 +1,41 @@
+﻿- type: entity
+  parent: CMBaseWeaponSMG
+  name: M63B2 submachine gun
+  id: RMCWeaponSMGM63B2
+  description: A modified version M63 submachinegun, re-engineered for better weight, handling and accuracy. Given only to elite units.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/SMGs/m63b2.rsi
+    layers:
+    - state: bolt-open
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/SMGs/m63b2.rsi
+  - type: Gun
+    shotsPerBurst: 3
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_m63.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: CMMagazineSMGM63AP
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - CMMagazineSMGM63
+          - CMMagazineSMGM63AP
+          - CMMagazineSMGM63Ext
+          - RMCMagazineSMGM63Rubber
+          - RMCMagazineSMGM63HEAP
+  - type: Tag
+    tags:
+    - RMCWeaponSMG
+    - RMCWeaponSMGM63B2
+
+- type: Tag
+  id: RMCWeaponSMGM63B2
