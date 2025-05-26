@@ -1,0 +1,47 @@
+#DEAD SQUAD START
+- type: entity
+  parent: ClothingBackpackERTSecurity
+  id: ClothingBackpackDeadSquadSecurity
+  name: Death squad backpack
+  description: You don't have to know whose backpack it is.
+  suffix: DeathSquad
+  components:
+  - type: Sprite
+    sprite: Imperial/Other/ErtCall/deadsquadBackpack.rsi
+  - type: Storage
+    grid:
+    - 0,0,11,4
+  - type: ExplosionResistance #Mono: More explosive resistance
+    damageCoefficient: 0.3
+
+- type: entity
+  noSpawn: false
+  parent: ClothingBackpackDeadSquadSecurity
+  id: ClothingBackpackDeadSquadSecurityFilled
+  suffix: DeathSquad, filled
+  components:
+    - type: StorageFill
+      contents:
+        - id: BoxSurvivalEngineering
+        - id: ERTUplinkDeadSquadAlt #Добавлено для нового пресета Эскадрона Смерти.
+        - id: PillAmbuzolPlus
+
+- type: entity
+  id: ClothingBeltDeadSquadFilled
+  parent: ClothingBeltChiefEngineer
+  suffix: DeathSquad, Filled
+  components:
+  - type: Sprite
+    sprite: Imperial/Other/ErtCall/deadsquadBelt.rsi
+  - type: Clothing
+    sprite: Imperial/Other/ErtCall/deadsquadBelt.rsi
+  - type: StorageFill
+    contents:
+      - id: PowerDrill
+      - id: JawsOfLife
+      - id: WelderExperimental
+      - id: Multitool
+      - id: CableApcStack
+  - type: ExplosionResistance #Mono: Explosive resistance
+    damageCoefficient: 0.3
+#DEAD SQUAD END
