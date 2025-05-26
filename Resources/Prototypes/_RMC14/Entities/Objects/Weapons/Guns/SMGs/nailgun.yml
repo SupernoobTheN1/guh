@@ -1,0 +1,98 @@
+﻿- type: entity
+  parent: CMBaseWeaponSMG
+  name: nailgun
+  id: WeaponNailgun
+  description: A carpentry tool, used to drive nails into tough surfaces. Of course, if there isn't anything there, that's just a very sharp nail launching at high velocity...
+  suffix: Filled
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/SMGs/nailgun.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-4
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/SMGs/nailgun.rsi
+  - type: Item
+    size: Normal
+  - type: Gun
+    shotsPerBurst: 3
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/nailgun_fire.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: RMCMagazineSMGNailgun
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - RMCMagazineSMGNailgun
+  - type: Tag
+    tags:
+    - RMCWeaponSMGNailgun
+
+- type: entity
+  parent: BaseMagazineRifle
+  id: RMCMagazineSMGNailgun
+  name: "nailgun magazine (7x45mm)"
+  description: "A large magazine of oversized plasteel nails. Unfortunately, the production cost of those nail makes them ill-affordable for most military projects, and only some specific construction projects requires them."
+  components:
+  - type: Tag
+    tags:
+    - CMMagazineSmg
+    - RMCMagazineSMGNailgun
+  - type: BallisticAmmoProvider
+    cycleable: false
+    whitelist:
+      tags:
+      - RMCCartridge7x45mm
+    proto: RMCCartridge7x45mm
+    capacity: 48
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/nailgun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-6
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 7
+    zeroVisible: false
+    zeroOnlyOnEmpty: true
+  - type: Appearance
+
+- type: entity
+  parent: CMCartridgeSMGBase
+  id: RMCCartridge7x45mm
+  name: nail (7x45mm)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - RMCCartridge7x45mm
+  - type: CartridgeAmmo
+    proto: Nail7x45mm
+
+- type: entity
+  parent: RMCBaseBullet
+  id: Nail7x45mm
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+
+- type: Tag
+  id: RMCWeaponSMGNailgun
+
+- type: Tag
+  id: RMCMagazineSMGNailgun

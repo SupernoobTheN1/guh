@@ -1,0 +1,65 @@
+- type: entity
+  abstract: true
+  parent: [ CMBaseWeaponGun, BaseItem ]
+  id: RMCBaseWeaponLMG
+  components:
+  - type: Gun
+    shotsPerBurst: 5
+    selectedMode: FullAuto
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+    availableModes:
+    - Fullauto
+    - SemiAuto
+    - Burst
+  - type: Wieldable
+  - type: Item
+    size: Large
+  - type: Clothing
+    slots:
+    - suitStorage
+    - Back
+  - type: AmmoCounter
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: StaticPrice
+    price: 500
+  - type: MagazineAmmoProvider
+    autoEject: false
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: GunRequiresWield
+
+- type: entity
+  parent: BaseMagazineRifle
+  id: RMCMagazineLMGBase
+  abstract: true
+  components:
+  - type: Item
+    size: Normal
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+    zeroOnlyOnEmpty: true
+  - type: Appearance
+  - type: Clothing
+    slots:
+    - suitStorage
+
+- type: entity
+  parent: BaseCartridgeRifle
+  id: RMCBaseCartridgeLMG
+  name: cartridge
+  abstract: true
+  components:
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+
+- type: Tag
+  id: RMCMagazineLMG
