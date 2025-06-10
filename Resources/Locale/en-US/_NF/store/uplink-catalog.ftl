@@ -180,8 +180,8 @@ uplink-pirate-crate-name = Rogue Cache
 uplink-pirate-crate-desc = A chest filled with the necessary goodies for insurgency.
 uplink-pirate-magboots-name = Rogue Magboots
 uplink-pirate-magboots-desc = Rogue magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
-uplink-pirate-hoverbike-name = Pirate Hoverbike
-uplink-pirate-hoverbike-desc = Yarr! Dis be me sovereign space shuttle. Now, whaur me rum?
+uplink-pirate-hoverbike-name = Pirate Hoverbike Flatpack
+uplink-pirate-hoverbike-desc = A flatpack containing the grand pirate mobile. The keys are already in the ignition, we don't need no damn safety around here.
 uplink-pirate-blunderbuss-name = Blunderbuss
 uplink-pirate-blunderbuss-desc = Deadly at close range, an illegal shotgun often found at the side of a pirate.
 uplink-pirate-revolver-name = Suave Revolver
@@ -239,11 +239,14 @@ uplink-security-rad-pen-desc = A rapid dose of anti-radiation. Contains arithraz
 uplink-security-combat-pen-name = Combat Medipen
 uplink-security-combat-pen-desc = A general use shot of omnizine, packaged in a autoinjector.
 
+uplink-security-syringe-case-name = Medipen Case
+uplink-security-syringe-case-desc = A pocket case filled with medipens for most combat scenarios.
+
 uplink-security-compact-defibrillator-name = Compact Defibrillator
 uplink-security-compact-defibrillator-desc = A portable defibrillator made for field revivals.
 
-uplink-security-cash5000-name = 5,000 Spesos
-uplink-security-cash5000-desc = Cold, hard cash.
+uplink-security-cash7500-name = 7,500 Spesos
+uplink-security-cash7500-desc = Cold, hard cash.
 
 uplink-security-thrusterkit-name = Thruster Upgrade Kit
 uplink-security-thrusterkit-desc = Contains 32 super capaciters. Perfect for upgrading eight thrusters.

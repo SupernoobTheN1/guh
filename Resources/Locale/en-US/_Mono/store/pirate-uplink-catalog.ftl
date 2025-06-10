@@ -27,6 +27,9 @@ uplink-pirate-combat-medkit-desc = A medkit containing the supplies to heal brut
 uplink-pirate-combat-pen-name = Combat Medipen
 uplink-pirate-combat-pen-desc = A general use shot of omnizine, packaged in a autoinjector.
 
+uplink-pirate-syringe-case-name = Medipen Case
+uplink-pirate-syringe-case-desc = A pocket case filled with medipens for most combat scenarios.
+
 uplink-pirate-hyperzine-name = Hyperzine Injector
 uplink-pirate-hyperzine-desc = Combat stimulants that prevent stuns and increase your movement capabilities. Lasts 30 seconds.
 
@@ -183,7 +186,16 @@ uplink-pirate-webvest-desc = A webvest smuggled into the sector that hasn't been
 uplink-pirate-syndie-mask-name = Syndicate Gas Mask
 uplink-pirate-syndie-mask-desc = A smuggled into the sector tactical mask that can be connected to an air supply.
 
+uplink-pirate-modsuit-name = RX-01 Rogue Modsuit
+uplink-pirate-modsuit-desc = An experimental modsuit prototype developed by Ullman Industries. When powered it provides enhanced agility and boosted sensors. "The original client died so uh, go nuts" - Felix Ullman
+
 # MARK: Explosives
+
+uplink-pirate-flashbanggrenade-box-name = Flashbang Grenade Box
+uplink-pirate-flashbanggrenade-box-desc = A box containing 4 flashbang grenades.
+
+uplink-pirate-smokegrenade-box-name = Smoke Grenade Box
+uplink-pirate-smokegrenade-box-desc = A box containing 4 smoke grenades.
 
 uplink-pirate-c4-name = C-4
 uplink-pirate-c4-desc = Use it to breach walls, dispose of bodies, break equipment or attach it to that pet you dislike. Comes with modifiable timer with minimum of 10 second setting.
@@ -191,14 +203,18 @@ uplink-pirate-c4-desc = Use it to breach walls, dispose of bodies, break equipme
 uplink-pirate-c4-bundle-name = C-4 Bundle
 uplink-pirate-c4-bundle-desc = Enough C-4 to blow your way into a vault and out through the back.
 
-uplink-pirate-emp-grenade-name = EMP Grenade
-uplink-pirate-emp-grenade-desc = A grenade designed to disrupt electronic systems. Useful for disrupting communications, security's energy weapons, and APCs when you're in a tight spot.
+uplink-pirate-empgrenade-box-name = EMP Grenade Box
+uplink-pirate-empgrenade-box-desc = A box containing 4 EMP grenades.
 
-uplink-pirate-incendiary-grenade-name = Incendiary Grenade
-uplink-pirate-incendiary-grenade-desc = Releases a spray of incendiary fragments, igniting anyone near the detonation area.
+uplink-pirate-incendiarygrenade-box-name = Incendiary Grenade Box
+uplink-pirate-incendiarygrenade-box-desc = A box containing 4 incendiary grenades.
 
-uplink-pirate-shrapnel-grenade-name = Shrapnel Grenade
-uplink-pirate-shrapnel-grenade-desc = Launches a spray of sharp fragments dealing great damage against unarmored targets.
+uplink-pirate-shrapnelgrenade-box-name = Shrapnel Grenade Box
+uplink-pirate-shrapnelgrenade-box-desc = A box containing 4 shrapnel grenades.
+
+uplink-pirate-explosivegrenade-box-name = Explosive Grenade Box
+uplink-pirate-explosivegrenade-box-desc = A box containing 4 explosive grenades.
+
 
 # MARK: $Gambling$
 

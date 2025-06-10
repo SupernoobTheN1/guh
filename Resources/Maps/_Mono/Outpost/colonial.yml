@@ -3844,6 +3844,9 @@ entities:
             1616: -18,41
     - type: RadiationGridResistance
     - type: GridGodMode
+    - type: GridRaider
+    - type: GridPacifier
+      exemptCompany1: TSF
     - type: GridAtmosphere
       version: 2
       data:

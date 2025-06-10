@@ -4,7 +4,7 @@
   description: uplink-security-annie-desc
   productEntity: WeaponRifleAnnie
   cost:
-    FrontierUplinkCoin: 15
+    FederationMilitaryCredit: 15
   categories:
     - UplinkSecurityWeapons
   conditions:
@@ -19,9 +19,46 @@
   description: uplink-security-eg4-desc
   productEntity: WeaponEnergyRevolver
   cost:
-    FrontierUplinkCoin: 10
+    FederationMilitaryCredit: 7
   categories:
   - UplinkSecurityWeapons
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - SecurityUplink
+
+- type: listing
+  id: UplinkSecuritySurgeryDuffel
+  name:  uplink-security-surgery-duffel-name
+  description: uplink-security-surgery-duffel-desc
+  productEntity: ClothingBackpackDuffelSurgeryAdvancedFilled
+  icon: { sprite: Objects/Specific/Medical/Surgery/scalpel.rsi, state: laser }
+  cost:
+    FederationMilitaryCredit: 4
+  categories:
+    - UplinkSecurityUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Brigmedic
+        - Bailiff
+        - Sheriff
+
+
+- type: listing
+  id: UplinkSecurityPortableRecharger
+  name:  uplink-security-portable-recharger-name
+  description: uplink-security-portable-recharger-desc
+  productEntity: PortableRecharger
+  cost:
+    FederationMilitaryCredit: 7
+  categories:
+  - UplinkSecurityUtility
   conditions:
   - !type:StoreWhitelistCondition
     whitelist:
@@ -34,7 +71,7 @@
   description: uplink-subsonic-mag-desc
   productEntity: MagazineLightRifleSubsonic
   cost:
-    FrontierUplinkCoin: 1
+    FederationMilitaryCredit: 1
   categories:
   - UplinkSecurityAmmo
   conditions:
@@ -49,7 +86,7 @@
   description: uplink-subsonic-box-desc
   productEntity: MagazineBoxLightRifleSubsonic
   cost:
-    FrontierUplinkCoin: 3
+    FederationMilitaryCredit: 3
   categories:
   - UplinkSecurityAmmo
   conditions:
@@ -58,17 +95,17 @@
       tags:
       - SecurityUplink
 
-- type: listing
-  id: UplinkSecurityAuroraExosuit
-  name:  uplink-exosuit-aurora-name
-  description: uplink-exosuit-aurora-desc
-  productEntity: ClothingOuterExosuitAurora
-  cost:
-    FrontierUplinkCoin: 25
-  categories:
-  - UplinkSecurityHardsuits
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - SecurityUplink
+# - type: listing
+#   id: UplinkSecurityAuroraExosuit
+#   name:  uplink-exosuit-aurora-name
+#   description: uplink-exosuit-aurora-desc
+#   productEntity: ClothingOuterExosuitAurora
+#   cost:
+#     FederationMilitaryCredit: 25
+#   categories:
+#   - UplinkSecurityHardsuits
+#   conditions:
+#   - !type:StoreWhitelistCondition
+#     whitelist:
+#       tags:
+#       - SecurityUplink

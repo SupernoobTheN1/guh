@@ -116,8 +116,8 @@
         - MachineLayer
   - type: Contraband
     turnInValues:
-      FrontierUplinkCoin: 3
-      Doubloon: 2
+      FederationMilitaryCredit: 3
+      Doubloon: 3 # 2->3 - Mono
   - type: ShipyardSellCondition
     blockSale: true
     reason: shipyard-console-contraband-onboard
