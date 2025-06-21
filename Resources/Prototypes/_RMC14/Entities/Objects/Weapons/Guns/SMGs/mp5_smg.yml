@@ -1,0 +1,88 @@
+﻿- type: entity
+  parent: CMBaseWeaponSMG
+  name: MP5 submachinegun
+  id: WeaponSMGMP5
+  description: A German design, this was one of the most widely used submachine guns in the world. It's still possible to find this firearm in the hands of collectors or gun fanatics.
+  suffix: Filled
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/SMGs/mp5.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/SMGs/mp5.rsi
+  - type: Gun
+    shotsPerBurst: 3
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/smg_light.ogg
+  - type: MagazineAmmoProvider
+    autoEject: false
+    soundAutoEject: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: CMMagazineSMGMP5
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - CMMagazineSMGMP5
+
+- type: entity
+  parent: BaseMagazineRifle
+  id: CMMagazineSMGMP5
+  name: "MP5 magazine (9mm)"
+  description: "A 9mm magazine for the MP5."
+  components:
+  - type: Tag
+    tags:
+    - CMMagazineSmg
+    - CMMagazineSMGMP5
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - CMCartridge9mmSMG
+    proto: CMCartridge9mmSMG
+    capacity: 30
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/mp5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+    zeroOnlyOnEmpty: true
+  - type: Appearance
+
+- type: entity
+  parent: CMCartridge10x20mm
+  id: CMCartridge9mmSMG
+  name: cartridge (9mm SMG)
+  description: A 9mm cartridge for the mp5 submachinegun.
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CMCartridge9mmSMG
+  - type: CartridgeAmmo
+    proto: CMBullet9mmSMG
+
+- type: entity
+  parent: Bullet10x20mm
+  id: CMBullet9mmSMG #Yes it does use a seperate type of 9mm thats mechanically identical to 10x20mm for some reason
+
+- type: Tag
+  id: CMMagazineSMGMP5
+
+- type: Tag
+  id: CMCartridge9mmSMG

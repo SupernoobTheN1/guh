@@ -1,0 +1,111 @@
+﻿- type: entity
+  parent: [ RMCBaseWeaponLMG, RMCBaseWeaponMagazineVisuals ]
+  name: MAR-50 light machine gun
+  id: RMCWeaponMar50LMG
+  description: A cheap, reliable LMG chambered in 7.62x39mm. Commonly found in the hands of slightly better funded criminals.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/LMGs/mar50.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/LMGs/mar50.rsi
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: Gun
+    shotsPerBurst: 5
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - Burst
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_mar40.ogg
+      params:
+        volume: -0.2
+        pitch: 0.85
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: RMCMagazineMar50LMG
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - RMCMagazineMar50LMG
+          - RMCMagazineRifleMAR40
+          - RMCMagazineRifleMAR40Ext
+  - type: Tag
+    tags:
+    - RMCWeaponMar50LMG
+  - type: GunRequiresWield
+
+- type: entity
+  parent: CMMagazineRifleBase
+  id: RMCMagazineMar50LMG
+  name: MAR drum magazine (7.62x39mm)
+  description: A 7.62x39mm drum magazine for the MAR-50 LMG.
+  components:
+  - type: Tag
+    tags:
+    - CMMagazineRifle
+    - RMCMagazineMar50LMG
+  - type: BallisticAmmoProvider
+    mayTransfer: True
+    whitelist:
+      tags:
+      - RMCCartridgeRifle762x39mm
+    proto: RMCCartridgeRifle762x39mm
+    capacity: 100
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/mar50.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Appearance
+#  - type: RefillableByBulletBox No Bullet Box yet
+#    bulletType: RMCBoxBulletsRifle
+
+- type: entity
+  parent: CMBaseCartridgeRifle
+  id: RMCCartridgeRifle762x39mm
+  name: cartridge (7.62x39mm)
+  description: A 7.62x39mm cartridge. Fits in 7.62x39mm magazines.
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - RMCCartridgeRifle762x39mm
+  - type: CartridgeAmmo
+    proto: RMCBulletRifle762x39mm
+
+- type: entity
+  parent: RMCBaseBullet
+  id: RMCBulletRifle762x39mm
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 23
+
+- type: Tag
+  id: RMCWeaponMar50LMG
+
+- type: Tag
+  id: RMCMagazineMar50LMG
+
+- type: Tag
+  id: RMCCartridgeRifle762x39mm
+

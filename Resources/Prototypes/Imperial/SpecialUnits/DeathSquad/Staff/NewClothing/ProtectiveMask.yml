@@ -1,0 +1,24 @@
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskDeathSquadAlt
+  name: death squad protective mask
+  description: A unique gas mask for the NT's most elite squad.
+  suffix: DeathSquad
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/squadron.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Mask/squadron.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+  - type: FireProtection
+    reduction: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.85
+        Caustic: 0.9

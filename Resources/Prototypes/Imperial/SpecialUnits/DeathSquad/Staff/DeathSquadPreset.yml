@@ -1,0 +1,69 @@
+- type: entity
+  parent: MobHuman
+  id: DeathSquadEVAPreset
+  suffix: DeathSquad, Alt, Noghostrole
+  name: Deathsquad Agent
+  components:
+    - type: Sprite
+      netsync: false
+      sprite: Markers/imperial_jobs.rsi
+      state: deathsquad-icon
+    - type: Loadout
+      prototypes: [ DeathSquadEVALodout ] #new lodout
+    - type: AutoImplant
+      implants:
+      - FreedomImplant
+      - EmpImplant
+      - MindShieldImplant
+    - type: NpcFactionMember
+      factions:
+      - DeathSquad
+    - type: RandomMetadata
+      nameSegments:
+      - DeathSquadSecond
+      - DeathSquadFirst
+      - DeathSquadNumber
+    - type: Respirator
+      updateInterval: 99999 # Shouldn't run often, if ever.
+      suffocationThreshold: -100 # Should never happen.
+      damage:
+        types: {}
+      damageRecovery:
+        types: {}
+
+- type: startingGear #gear
+  id: DeathSquadEVALodout
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDeathSquad
+    back: ClothingBackpackDeadSquadSecurityFilled
+    eyes: GlassesDeathSquad
+    mask: ClothingMaskDeathSquadAlt
+    ears: SODDeathSquadHeadset
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitDeathsquadAlt
+    shoes: BootsMagDeathSquad
+    id: DeadSquadPDA
+    pocket1: EnergySword
+    pocket2: WeaponRevolverMateba
+    suitstorage: OxygenTankFilled
+    belt: ClothingBeltDeadSquadFilled
+
+- type: entity #role spawn
+  id: DeathSquadEVAPresetGhostRole
+  name: Death Squad EVA preset
+  parent: MarkerBase
+  suffix: DeathSquad, Alt
+  components:
+    - type: GhostRole
+      name: ertcall-deathsquad-security-eva-name
+      description: ertcall-deathsquad-security-eva-desc
+      rules: ertcall-deathsquad-security-eva-rules
+      raffle:
+        settings: default
+    - type: GhostRoleMobSpawner
+      prototype: DeathSquadEVAPreset
+    - type: Sprite
+      sprite: Markers/imperial_jobs.rsi
+      layers:
+        - sprite: Markers/imperial_jobs.rsi
+          state: deathsquad-icon #new icon

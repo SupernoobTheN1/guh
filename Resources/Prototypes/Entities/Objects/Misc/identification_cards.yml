@@ -574,19 +574,6 @@
       job: Musician
 
 - type: entity
-  parent: IDCardStandard
-  id: CentcomIDCardDeathsquad
-  name: death squad ID card
-  components:
-  - type: Sprite
-    layers:
-    - state: centcom
-  - type: Item
-    heldPrefix: blue
-  - type: PresetIdCard
-    job: DeathSquad
-
-- type: entity
   name: contractor ID card # Frontier: passenger<contractor
   parent: [IDCardStandard, BaseC3SyndicateContraband]
   id: AgentIDCard
