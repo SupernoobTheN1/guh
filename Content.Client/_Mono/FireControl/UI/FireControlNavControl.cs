@@ -60,7 +60,7 @@ public sealed class FireControlNavControl : BaseShuttleControl
     private float _lastCursorUpdateTime = 0f;
     private const float CursorUpdateInterval = 0.1f; // 10 updates per second
 
-    public FireControlNavControl() : base(64f, 512f, 512f)
+    public FireControlNavControl() : base(64f, 768f, 768f)
     {
         IoCManager.InjectDependencies(this);
         _shuttles = EntManager.System<SharedShuttleSystem>();
@@ -179,6 +179,8 @@ public sealed class FireControlNavControl : BaseShuttleControl
 
     protected override void Draw(DrawingHandleScreen handle)
     {
+        UseCircleMaskShader(handle); // Mono
+
         base.Draw(handle);
 
         DrawBacking(handle);
@@ -329,7 +331,8 @@ public sealed class FireControlNavControl : BaseShuttleControl
             if (_isMouseInside && _controllables != null)
             {
                 var worldPos = blip.Item1;
-                var isFireControllable = _controllables.Any(c => {
+                var isFireControllable = _controllables.Any(c =>
+                {
                     var coords = EntManager.GetCoordinates(c.Coordinates);
                     var entityMapPos = _transform.ToMapCoordinates(coords);
                     return Vector2.Distance(entityMapPos.Position, worldPos) < 0.1f &&
@@ -356,6 +359,58 @@ public sealed class FireControlNavControl : BaseShuttleControl
                 }
             }
         }
+
+        // Draw hitscan lines from the radar blips system
+        var hitscanLines = _blips.GetRawHitscanLines();
+        foreach (var line in hitscanLines)
+        {
+            Vector2 startPosInView;
+            Vector2 endPosInView;
+
+            // Handle differently based on if there's a grid
+            if (line.Grid == null)
+            {
+                // For world-space lines without a grid, use standard world transformation
+                startPosInView = Vector2.Transform(line.Start, worldToShuttle * shuttleToView);
+                endPosInView = Vector2.Transform(line.End, worldToShuttle * shuttleToView);
+            }
+            else
+            {
+                // For grid-relative lines, we need to transform from grid space to world space first
+                var gridEntity = EntManager.GetEntity(line.Grid.Value);
+                if (EntManager.TryGetComponent<TransformComponent>(gridEntity, out var gridXform))
+                {
+                    var gridToWorld = _transform.GetWorldMatrix(gridEntity);
+                    var gridStartWorld = Vector2.Transform(line.Start, gridToWorld);
+                    var gridEndWorld = Vector2.Transform(line.End, gridToWorld);
+
+                    startPosInView = Vector2.Transform(gridStartWorld, worldToShuttle * shuttleToView);
+                    endPosInView = Vector2.Transform(gridEndWorld, worldToShuttle * shuttleToView);
+                }
+                else
+                {
+                    // Fallback to treating as world coordinates if grid transform is not available
+                    startPosInView = Vector2.Transform(line.Start, worldToShuttle * shuttleToView);
+                    endPosInView = Vector2.Transform(line.End, worldToShuttle * shuttleToView);
+                }
+            }
+
+            // Check if the line is within the view bounds before drawing
+            var viewBounds = new Box2(-3f, -3f, Size.X + 3f, Size.Y + 3f);
+            var lineBounds = new Box2(
+                Math.Min(startPosInView.X, endPosInView.X),
+                Math.Min(startPosInView.Y, endPosInView.Y),
+                Math.Max(startPosInView.X, endPosInView.X),
+                Math.Max(startPosInView.Y, endPosInView.Y)
+            );
+
+            if (viewBounds.Intersects(lineBounds))
+            {
+                handle.DrawLine(startPosInView, endPosInView, line.Color.WithAlpha(0.8f));
+            }
+        }
+
+        ClearShader(handle);
         #endregion
     }
 

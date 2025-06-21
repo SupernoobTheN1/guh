@@ -36,7 +36,7 @@ public sealed class NFCCVars
     /// The time in seconds after which a cryosleeping body is considered expired and can be deleted from the storage map.
     /// </summary>
     public static readonly CVarDef<float> CryoExpirationTime =
-        CVarDef.Create("nf14.uncryo.maxtime", 180 * 60f, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("nf14.uncryo.maxtime", 360 * 60f, CVar.SERVER | CVar.REPLICATED);
 
     /*
      *  Public Transit
@@ -132,7 +132,7 @@ public sealed class NFCCVars
     /// Cooldown for failed missions.
     /// </summary>
     public static readonly CVarDef<float> SalvageExpeditionFailedCooldown =
-        CVarDef.Create("salvage.expedition_failed_cooldown", 1200f, CVar.REPLICATED);
+        CVarDef.Create("salvage.expedition_failed_cooldown", 450f, CVar.REPLICATED); //Mono 1200->450
 
     /// <summary>
     /// Whether salvage expedition rewards is enabled.
@@ -155,10 +155,10 @@ public sealed class NFCCVars
     public static readonly CVarDef<int> SmugglingMaxDeadDrops =
         CVarDef.Create("nf14.smuggling.max_sector_dead_drops", 10, CVar.REPLICATED);
     /// <summary>
-    /// The minimum number of FUCs to spawn for anti-smuggling work.
+    /// The minimum number of FMCs to spawn for anti-smuggling work.
     /// </summary>
-    public static readonly CVarDef<int> SmugglingMinFucPayout =
-        CVarDef.Create("nf14.smuggling.min_fuc_payout", 1, CVar.REPLICATED);
+    public static readonly CVarDef<int> SmugglingMinFMCPayout =
+        CVarDef.Create("nf14.smuggling.min_fmc_payout", 1, CVar.REPLICATED);
     /// <summary>
     /// The shortest time to wait before a dead drop spawns a new smuggling note.
     /// </summary>

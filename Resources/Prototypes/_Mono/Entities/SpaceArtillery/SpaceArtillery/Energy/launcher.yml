@@ -22,7 +22,7 @@
     range: 500
   - type: Gun
     fireRate: 0.5
-    projectileSpeed: 60
+    projectileSpeed: 180
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon2.ogg
     soundEmpty:
@@ -60,6 +60,8 @@
     scale: 2
   - type: ShipGunType
     shipType: Energy
+  - type: ShipGunClass
+    shipClass: Medium
 
 # RUBICON
 
@@ -85,7 +87,7 @@
     range: 500
   - type: Gun
     fireRate: 0.2
-    projectileSpeed: 40
+    projectileSpeed: 120
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon2.ogg
     soundEmpty:
@@ -123,6 +125,8 @@
     scale: 2
   - type: ShipGunType
     shipType: Energy
+  - type: ShipGunClass
+    shipClass: Medium
 
 # DYMERE
 
@@ -142,8 +146,8 @@
   - type: Appearance
   - type: AmmoCounter
   - type: Battery
-    maxCharge: 40000
-    startingCharge: 40000
+    maxCharge: 40800
+    startingCharge: 40800
   - type: ExaminableBattery
   - type: WirelessNetworkConnection
     range: 500
@@ -155,18 +159,20 @@
           bounds: "-0.75,-0.75,0.75,0.75"
         density: 1500
   - type: Gun
-    projectileSpeed: 95
+    projectileSpeed: 285
     fireRate: 0.75
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/laserfire.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: BatterySelfRecharger
+    autoRechargePause: true
+    autoRechargePauseTime: 60
     autoRecharge: true
-    autoRechargeRate: 67
+    autoRechargeRate: 81600
   - type: SpaceArtillery
-    powerChargeRate: 67
-    powerUsePassive: 5750
+    powerChargeRate: 81600
+    powerUsePassive: 25000
     powerUseActive: 0
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
@@ -177,3 +183,5 @@
     scale: 3
   - type: ShipGunType
     shipType: Energy
+  - type: ShipGunClass
+    shipClass: Medium

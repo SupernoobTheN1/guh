@@ -18,6 +18,8 @@
   weight: 20
   displayWeight: 20
   special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, UsspTrackingImplant ]
   - !type:AddComponentSpecial
     components:
     - type: MailDisabled
@@ -34,7 +36,8 @@
   id: USSPCorporalGear
   equipment:
     pocket1: WeaponPistolPollock
-    pocket2: MagazinePistol
+    pocket2: Magazine9x19mmPistolFMJ
   storage:
     back:
     - WeaponRifleAK502
+    - RadioHandheldNF

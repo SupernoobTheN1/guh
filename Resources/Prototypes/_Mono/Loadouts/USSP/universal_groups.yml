@@ -10,6 +10,41 @@
   - USSPBackpack
 
 - type: loadoutGroup
+  id: USSPBackpackSergeant
+  name: loadout-group-contractor-backpack
+  minLimit: 1
+  loadouts:
+  - USSPModsuitUSSPVaryag
+  fallbacks:
+  - USSPBackpack
+  subgroups: 
+  - USSPBackpack
+
+- type: loadoutGroup
+  id: USSPBackpackCorporal
+  name: loadout-group-contractor-backpack
+  minLimit: 1
+  loadouts:
+  - USSPModsuitUSSPVaryag
+  fallbacks:
+  - USSPBackpack
+  subgroups: 
+  - USSPBackpack
+
+- type: loadoutGroup
+  id: USSPOuterClothingOfficer
+  name: loadout-group-contractor-outerclothing
+  loadouts:
+  - USSPClothingCoat
+  - USSPClothingL10A
+
+- type: loadoutGroup
+  id: USSPOuterClothing
+  name: loadout-group-contractor-outerclothing
+  loadouts:
+  - USSPClothingL10
+
+- type: loadoutGroup
   id: USSPJumpsuit
   name: loadout-group-contractor-jumpsuit
   hidden: true # No point in showing this, it gets auto-selected.
@@ -55,3 +90,15 @@
   - USSPHeadsetCommand
   fallbacks:
   - USSPHeadsetCommand
+
+- type: loadoutGroup
+  id: USSPHeadCommissar
+  name: loadout-group-contractor-head
+  loadouts:
+  - USSPCommissarCap
+
+- type: loadoutGroup
+  id: USSPHeadOfficer
+  name: loadout-group-contractor-head
+  loadouts:
+  - USSPOfficerCap

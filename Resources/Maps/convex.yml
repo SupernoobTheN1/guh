@@ -29149,7 +29149,7 @@ entities:
       rot: -301.5928947446194 rad
       pos: 35.060738,110.85934
       parent: 1
-- proto: BoxBeanbag
+- proto: AmmoBox12_gaugeBeanbag
   entities:
   - uid: 22781
     components:
@@ -29478,7 +29478,7 @@ entities:
       rot: -31.415926535897945 rad
       pos: 87.43667,110.63811
       parent: 1
-- proto: BoxShotgunPractice
+- proto: AmmoBox12_gaugePractice
   entities:
   - uid: 22697
     components:
@@ -188972,7 +188972,7 @@ entities:
     - type: Transform
       pos: 113.5,42.5
       parent: 1
-- proto: MagazinePistolSubMachineGunTopMounted
+- proto: Magazine4.6x30mmSubMachineGunTopMountedFMJ
   entities:
   - uid: 28294
     components:
